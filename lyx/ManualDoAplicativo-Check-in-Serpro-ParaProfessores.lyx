@@ -1,0 +1,5270 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extreport
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%Adicionado et all em italico
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0, abnt-etal-text=it]{abntcite}
+%\usepackage {helvet}
+\renewcommand {\familydefault}{\sfdefault}
+%\usepackage[abnt-etal-text=emph,......]{abntcite} ou \usepackage[abnt-etal-text=it,......]{abntcite} 
+
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\options normaltoc, sumariocompleto
+\use_default_options false
+\maintain_unincluded_children no
+\language brazilian
+\language_package auto
+\inputencoding iso8859-1
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref true
+\pdf_title "Título da Monografia - Dissertação - Tese"
+\pdf_author "Nome do Autor"
+\pdf_subject "Descrever assunto"
+\pdf_keywords "Copiar do resumo"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref page
+\pdf_pdfusetitle true
+\papersize a4
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 1
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\align center
+
+\size large
+UNIVERSIDADE ESTADUAL DO NORTE FLUMINENSE
+\begin_inset Newline newline
+\end_inset
+
+CENTRO DE CIÊNCIA E TECNOLOGIA
+\begin_inset Newline newline
+\end_inset
+
+LABORATÓRIO DE ENGENHARIA E EXPLORAÇÃO DE PETRÓLEO
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Manual do Aplicativo Check-in - GovBr - Serpro
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Manual do Aluno de Graduação do LENEP
+\end_layout
+
+\begin_layout Plain Layout
+
+\size large
+Manual do Aplicativo Check-in - GovBr - Serpro
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Prof.
+ André Duarte Bueno - Coordenador do Curso de Engenharia de Petróleo
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 6cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+MACAÉ - RJ
+\begin_inset Newline newline
+\end_inset
+
+Abril - 2025
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introdução
+\end_layout
+
+\begin_layout Standard
+O objetivo deste manual é apresentar,
+ de forma simples e prática,
+ o uso do aplicativo 
+\series bold
+
+\begin_inset CommandInset href
+LatexCommand href
+name "Check In Serpro"
+target "https://play.google.com/store/apps/details?id=br.gov.serpro.checkin&hl=pt_BR"
+literal "false"
+
+\end_inset
+
+
+\series default
+ para registro de atividades acadêmicas na UENF.
+\end_layout
+
+\begin_layout Subsection
+Escopo do Problema
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Manual do aluno escopo diferente
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Atualmente as presenças dos discentes são coletadas em sala de aula usando uma folha de assinaturas,
+ pode ser uma folha avulsa ou a folha de presença gerada pelo sistema acadêmico.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Um problema que ocorre é um aluno assinar por outro - uma fraude!
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+No final de cada mês as presenças são lançadas usando o aplicativo online 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://academico.uenf.br/"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+É bastante trabalhoso pois o professor tem de conferir,
+ para cada aluno,
+ o total de faltas e presenças.
+\end_layout
+
+\begin_layout Itemize
+É um trabalho manual,
+ tedioso,
+ repetitivo e sujeito a erros.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Um problema ainda maior é o lançamento de presenças em eventos externos à UENF,
+ como exemplo eventos de extensão.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+É complicado pois todos estes eventos de um modo geral requerem a presença de um representante legal da UENF para validação das atividades.
+\end_layout
+
+\begin_layout Itemize
+Com a exigência do MEC de que 10% de carga horária dos cursos,
+ seja de extensão,
+ eventos externos irão ocorrer com enorme frequência e a presença do representante legal implicaria em grandes custos de transporte e horas de pessoal.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Então,
+ o nosso problema é o registro da presença de discentes em eventos realizados na UENF e fora da UENF (externos).
+\end_layout
+
+\begin_layout Subsection
+Objetivos
+\end_layout
+
+\begin_layout Standard
+Os objetivos deste manual são:
+\end_layout
+
+\begin_layout Itemize
+Apresentar a justificativa para uso do aplicativo.
+\end_layout
+
+\begin_layout Itemize
+Apresentar o link e a instalação do aplicativo no seu celular e cadastro do organizador do evento.
+\end_layout
+
+\begin_layout Itemize
+Apresentar a configuração de um evento e a geração do Qr-Code associado.
+\end_layout
+
+\begin_layout Itemize
+Apresentar o registro da presença pelo discente.
+\end_layout
+
+\begin_layout Itemize
+Apresentar o procedimento para obter a lista de presença.
+\end_layout
+
+\begin_layout Standard
+Os exemplos associados estão relacionados ao Curso de Engenharia de Petróleo da UENF.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Detalhamento do Problema
+\end_layout
+
+\begin_layout Standard
+O objetivo desta seção é contextualizar historicamente o problema,
+ apresentar as alterações exigidas pelo MEC nos PPCs (nos cursos) e as mudanças no sistema acadêmico que levaram a busca de uma solução para o registro de eventos e a lista de presença.
+\end_layout
+
+\begin_layout Standard
+A descrição a seguir é resumida e bastante direta (usa sentenças).
+\end_layout
+
+\begin_layout Itemize
+Historicamente temos um PPC - Projeto Pedagógico do Curso
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Dentro do PPC temos uma grade com um conjunto de disciplinas obrigatórias e optativas a serem realizadas pelos discentes.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Veja na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema Acadêmico - Menu Exigências-1"
+
+\end_inset
+
+ a grade do Curso de Engenharia de Petróleo.
+ Observe que temos a cada semestre um conjunto de disciplinas obrigatórias,
+ algumas disciplinas optativas e algumas exigências.
+ Este é o padrão para a maioria dos cursos da UENF.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/UENF-CCT-LENEP-GradeCursoEngenhariaPetroleo-2023-uenf-prograd.png
+	lyxscale 50
+	width 100text%
+	height 80theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sistema Acadêmico - Menu Exigências
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sistema Acadêmico - Menu Exigências-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Disciplinas e turmas regulares:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+As disciplinas tem ementas cadastradas.
+\end_layout
+
+\begin_layout Itemize
+As turmas estão associadas as ementas e tem professor(es),
+ sala/local,
+ hora.
+\end_layout
+
+\begin_layout Itemize
+As turmas devem ser abertas dentro do calendário acadêmico.
+\end_layout
+
+\begin_layout Itemize
+As presenças são coletadas em sala de aula usando uma folha de assinaturas.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Ocorrem eventos de fraudes como um aluno assinar por outro!
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+As presenças são lançadas no final de cada mês usando o aplicativo online 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://academico.uenf.br/"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+É bastante trabalhoso pois o professor tem de conferir,
+ para cada aluno,
+ o total de faltas e presenças.
+\end_layout
+
+\begin_layout Itemize
+É um trabalho manual,
+ tedioso,
+ repetitivo e sujeito a erros.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Em 2018 o 
+\begin_inset CommandInset href
+LatexCommand href
+name "MEC - Ministério da Educação"
+target "https://www.gov.br/mec/pt-br"
+literal "false"
+
+\end_inset
+
+ alterou as regras de funcionamento dos cursos,
+ entre as principais mudanças estão:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Exigir que 10% da carga horária dos cursos esteja relacionada a atividades de extensão (
+\begin_inset CommandInset href
+LatexCommand href
+name "Resolução nº 7, de 18 de dezembro de 2018 - MEC"
+target "http://portal.mec.gov.br/index.php?option=com_docman&view=download&alias=104251-rces007-18&category_slug=dezembro-2018-pdf&Itemid=30192"
+literal "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Itemize
+Exigir uma carga horária mínima associada a 
+\emph on
+AAC - Atividades Acadêmicas Complementares
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+A data desta exigência precisa ser verificada.
+\end_layout
+
+\end_inset
+
+
+\emph default
+ (
+\begin_inset CommandInset href
+LatexCommand href
+name "Atividades extracurriculares - MEC - Ministério da Educação"
+target "http://portal.mec.gov.br/component/tags/tag/atividades-extracurriculares"
+literal "false"
+
+\end_inset
+
+).
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+no dia que preparei este doc os links do mec não estavam funcionando!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+A 
+\begin_inset CommandInset href
+LatexCommand href
+name "PROGRAD"
+target "https://uenf.br/graduacao/?grupo=GRADUACAO"
+literal "false"
+
+\end_inset
+
+ - Pró-Reitoria da Graduação,
+ visando atender as novas demandas,
+ alterou o sistema acadêmico:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A PROGRAD identificou que algumas atividades acadêmicas eram cumpridas fora do calendário acadêmico (como defesas de TCC),
+ mas só podiam ser registradas após abertura de novo 
+\begin_inset Quotes eld
+\end_inset
+
+semestre
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Isto gerava problemas operacionais,
+ por exemplo para liberar alunos formandos.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Uma alternativa que foi usada algumas vezes foi a realização de semestres extras,
+ como exemplo,
+ em 2024 tivemos o semestre 2024/2E,
+ semestre realizado no verão (janeiro e fevereiro de 2025) e que permitiu a formatura da aluna Giovanna Massardi,
+ primeira aluna formada já na grade nova de nosso curso.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Para resolver o problema de registro destas atividades fora do calendário acadêmico a PROGRAD criou um mecanismo chamado de 
+\begin_inset Quotes eld
+\end_inset
+
+exigências
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+A ideia das exigências é que se a atividade pode ser cumprida em qualquer momento,
+ a mesma seja cadastrada no PPC como exigência.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Por exemplo,
+ o TCC - Trabalho de Conclusão de Curso,
+ antigamente cadastrado como Disciplina/Turma agora esta cadastrado como exigência.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Sobre as Exigências
+\end_layout
+
+\begin_layout Standard
+Iremos esclarecer o que é uma exigência,
+ tipos/Programas e Categorias,
+ como cadastrar uma turma de exigência,
+ vantagens e desvantagens do modelo adotado.
+\end_layout
+
+\begin_layout Itemize
+Uma exigência:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Não esta vinculada a uma ementa de disciplina (é mais livre).
+\end_layout
+
+\begin_layout Itemize
+Pode ser realizada a qualquer momento (é mais livre).
+\end_layout
+
+\begin_layout Itemize
+Tem códigos (Programas e Categorias) previamente estabelecidos (é mais rígido pois só podemos cadastrar uma exigência dentro do leque de códigos existentes).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Na prática o sistema acadêmico foi alterado e foram incluídas as atividades de exigências.
+ Veja Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema Acadêmico - Menu Exigências"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/Menu-Exigencias.png
+	width 100text%
+	height 70theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sistema Acadêmico - Menu Exigências
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sistema Acadêmico - Menu Exigências"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+A lista de possíveis 
+\emph on
+Programas de Exigências 
+\emph default
+esta na Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Tabela com Programas de Exigências"
+
+\end_inset
+
+.
+ Para ver a lista de programas no sistema acadêmico acesse 
+\begin_inset CommandInset href
+LatexCommand href
+name "aqui"
+target "https://academico.uenf.br/exigencia/programas"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela com Programas de Exigências
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Tabela com Programas de Exigências"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="17" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Código
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Nome
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+UENF001
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Trabalho de Conclusão de Curso
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+UENF002
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Atividades Acadêmicas Complementares
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+UENF011
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Atividades Curriculares de Extensão II
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+UENF004
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Estágio Supervisionado I
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+UENF005
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Estágio Supervisionado II
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+UENF006
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Estágio Supervisionado III
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+UENF007
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Estágio Supervisionado IV
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+UENF010
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Atividades Curriculares de Extensão I
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+UENF008
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Estágio Supervisionado V
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+UENF009
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Estágio Supervisionado VI
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+UENF003
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Estágio Curricular Obrigatório
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+UENF012
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Atividades Curriculares de Extensão III
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+UENF013
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Atividades Curriculares de Extensão
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+UENF014
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Estágio Curricular Obrigatório I
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+UENF015
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Estágio Curricular Obrigatório II
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+UENF016
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Projeto de Trabalho de Conclusão de Curso
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+No cadastro da turma de exigências é necessário definir o programa (Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Tabela com Programas de Exigências"
+
+\end_inset
+
+) e a categoria (Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Tabela com Categorias de Exigências"
+
+\end_inset
+
+).
+ Para ver a lista de categorias no sistema acadêmico acesse 
+\begin_inset CommandInset href
+LatexCommand href
+name "aqui"
+target "https://academico.uenf.br/exigencia/categorias"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela com Categorias de Exigências
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Tabela com Categorias de Exigências"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="32" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="1cm">
+<column alignment="center" valignment="top" width="16cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Código
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Nome
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+001
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+TCC - Monografia
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+002
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+TCC - Projeto Acadêmico
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+003
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+TCC - Artigo Científico para Publicação
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+004
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+TCC - Memorial
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+005
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+TCC - Relato de Caso
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+006
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+AAC - Atividades de Iniciação Científica
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+007
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+AAC - Atividades de Iniciação à Docência
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+008
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+AAC - Atividades de Iniciação Tecnológica
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+009
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+AAC - Atividades de Monitoria
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+010
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+AAC - Curso Formativo de Idiomas ou de Comunicação e Expressão
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+011
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+AAC - Representação Estudantil em Colegiados
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+012
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+AAC - Publicação de Artigo em Revista Científica Indexada
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+013
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+AAC - Participação em Empresa Junior ou Startup
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+015
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+AAC - Participação em Eventos Científico ou Culturais (Local,
+ Nacional ou Internacional)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+016
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+AAC - Participação na Organização de Campanhas ou Programas de Ação Social
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+017
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+AAC - Estágio Não Obrigatório
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+018
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ACE I - Participação em Projetos e Programas de Editais da PROEX
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+019
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ACE I - Participação em Projetos Isolados de Extensão Cadastrados na PROEX
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+022
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ACE II - Organização de Eventos de Extensão para Formação/Atualização de Público Alvo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+023
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ACE II - Organização de Curso de Formação/Atualização de Público Alvo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+024
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ACE II - Expositor/Organizador de Eventos para Popularização da Ciência
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+025
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ACE II - Participação em Comissão Organizadora de Campanhas ou Programas Sociais
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+027
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ACE III - Eventos de Capacitação (Educação Continuada) para Professores da Rede Pública de Educação Básica
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+028
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ACE III -Protagonizar Aulas de Reforço Escolar sob supervisão na Rede Pública
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+030
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ACE III - Prestação de Assessoria,
+ Consultoria,
+ Curadoria em Atividades ou Serviços para Públicos-Alvo Específicos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+031
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ACE III - Atendimento ao Público em Espaços de Cultura,
+ Ciência e Tecnologia (museus,
+ cineclubes,
+ galerias e afins)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+032
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ACE III - Organização e/ou Redação de jornal ou informativo Socio-cultural,
+ Científico-Tecnológico do Curso ou da UENF
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+033
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Estágios Licenciaturas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+034
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Estágios Bacharelados
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+036
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+TCC - Projeto de Trabalho de Conclusão de Curso
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+037
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+AAC - Atividades de Imersão
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Exigências do curso de Engenharia de Petróleo
+\end_layout
+
+\begin_layout Itemize
+No caso do 
+\begin_inset CommandInset href
+LatexCommand href
+name "Curso de Engenharia de Exploração e Produção de Petróleo"
+target "https://uenf.br/cct/lenep/graduacao/"
+literal "false"
+
+\end_inset
+
+ da 
+\begin_inset CommandInset href
+LatexCommand href
+name "UENF"
+target "https://uenf.br/portal/"
+literal "false"
+
+\end_inset
+
+/
+\begin_inset CommandInset href
+LatexCommand href
+name "CCT"
+target "https://uenf.br/cct/"
+literal "false"
+
+\end_inset
+
+/
+\begin_inset CommandInset href
+LatexCommand href
+name "LENEP"
+target "https://uenf.br/cct/lenep/"
+literal "false"
+
+\end_inset
+
+ temos as seguintes exigências cadastradas no PPC:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+UENF002 - Atividades Acadêmicas Complementares - 60h
+\end_layout
+
+\begin_layout Itemize
+UENF003 - Estágio Curricular Obrigatório - 170h
+\end_layout
+
+\begin_layout Itemize
+UENF013 - Atividades Curriculares de Extensão - 411h
+\end_layout
+
+\begin_layout Itemize
+UENF016 - Projeto de Trabalho de Conclusão de Curso - 68h
+\end_layout
+
+\begin_layout Itemize
+UENF001 - Trabalho de Conclusão de Curso - 68h
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Estas cargas horárias podem ser cumpridas em disciplinas obrigatórias e optativas ou mesmo atividades externas devidamente registradas e comprovadas.
+\end_layout
+
+\begin_layout Subsection
+UENF002 - Atividades Acadêmicas Complementares 
+\end_layout
+
+\begin_layout Itemize
+Uma AAC é uma Atividades Acadêmica Complementar,
+ como o nome diz,
+ visa complementar a formação do discente com atividades diferentes do padrão de sala de aula.
+\end_layout
+
+\begin_layout Itemize
+Toda AAC desenvolvida pelo estudante requer COMPROVAÇÃO LEGAL.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Então,
+ só faça a atividade se tiver certeza que irá receber os certificados.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+A seguir uma descrição das AACs mais praticadas nos cursos de engenharia da UENF.
+\end_layout
+
+\begin_layout Itemize
+006 AAC - Atividades de Iniciação Científica
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Atividade tradicional na UENF.
+ 
+\end_layout
+
+\begin_layout Itemize
+O aluno procura um orientador de IC e desenvolve um trabalho que visa o aprendizado dos conceitos de Iniciação Científica.
+ 
+\end_layout
+
+\begin_layout Itemize
+Inclui a elaboração do projeto,
+ que envolve o desenvolvimento dos capítulos de 
+\emph on
+Introdução 
+\emph default
+(escopo e objetivos do trabalho),
+ 
+\emph on
+Revisão Bibliográfica 
+\emph default
+(leitura de artigos) e 
+\emph on
+Metodologia 
+\emph default
+(definição das metodologias,
+ etapas e cronograma).
+\end_layout
+
+\begin_layout Itemize
+Posteriormente o aluno desenvolve o trabalho,
+ revisando os capítulos anteriores e adicionando os capítulos de 
+\emph on
+Desenvolvimento 
+\emph default
+(modelos,
+ equações,
+ softwares,
+ ensaios),
+ 
+\emph on
+Resultados 
+\emph default
+(simulações e resultados),
+ 
+\emph on
+Análise dos Resultados 
+\emph default
+(comparação com a bibliografia),
+ 
+\emph on
+Conclusões,
+ Referências Bibliográficas 
+\emph default
+e
+\emph on
+ Apêndices.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+007 AAC - Atividades de Iniciação à Docência
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Prática de preparação de material de aula,
+ ministrar aulas,
+ aplicar provas,
+ fazer relatórios.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+008 AAC - Atividades de Iniciação Tecnológica
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Envolve o desenvolvimento de uma atividade de iniciação a pesquisa científica e tecnológica,
+ geralmente com tema mais aplicado.
+\end_layout
+
+\begin_layout Itemize
+Pode envolver o desenvolvimento de um 
+\emph on
+Desafio Tecnológico
+\emph default
+,
+ a elaboração de um 
+\emph on
+Pré-Projeto 
+\emph default
+e depois de um 
+\emph on
+Projeto
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+O desenvolvimento da solução passa pela elaboração de capítulos como:
+ Escopo do Problema,
+ Elaboração,
+ Análise,
+ Projeto,
+ Implementação,
+ Testes,
+ Documentação.
+\end_layout
+
+\begin_layout Itemize
+No LENEP temos diversos exemplos de projetos de engenharia,
+ vide 
+\begin_inset CommandInset href
+LatexCommand href
+target "www.github/ldsc"
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+009 AAC - Atividades de Monitoria
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A UENF tem editais de monitoria remunerada e não remunerada.
+\end_layout
+
+\begin_layout Itemize
+O aluno que já cursou uma disciplina e teve boas notas pode se candidatar a vaga de monitor.
+\end_layout
+
+\begin_layout Itemize
+Seu trabalho é assessorar os alunos que estão cursando a disciplina,
+ tirando dúvidas e dando dicas de estudo.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+010 AAC - Curso Formativo de Idiomas ou de Comunicação e Expressão
+\end_layout
+
+\begin_layout Itemize
+011 AAC - Representação Estudantil em Colegiados
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Alunos que fazem parte de colegiados de curso podem contabilizar tais atividades.
+\end_layout
+
+\begin_layout Itemize
+Após conclusão do período de representação no colegiado solicite o certifica.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+012 AAC - Publicação de Artigo em Revista Científica Indexada
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Alunos que tiverem um ótimo desempenho nas atividades de Iniciação Científica ou Iniciação Tecnológica podem submeter os trabalhos desenvolvidos a revistas científicas indexadas.
+\end_layout
+
+\begin_layout Itemize
+A aprovação do artigo permite contabilizar as horas para sua execução.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+013 AAC - Participação em Empresa Junior ou Startup
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Alguns cursos tem Empresas Júnior ou Startup
+\end_layout
+
+\begin_layout Itemize
+A participação do aluno pode ser contabilizada.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+015 AAC - Participação em Eventos Científico ou Culturais (Local,
+ Nacional ou Internacional)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+O aluno que assiste uma palestra de seminários,
+ participa de um evento científico ou tecnológico ou cultural,
+ deve solicitar o certificado de participação.
+\end_layout
+
+\begin_layout Itemize
+Os certificados devem ter nome do evento,
+ local,
+ palestrantes,
+ carga horária e assinatura dos responsáveis para poderem ser contabilizados como AAC.
+\end_layout
+
+\begin_layout Itemize
+Outra forma de AAC é a organização e realização de eventos,
+ como exemplo os alunos do LENEP a mais de 20 anos realizam o ENGEP.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+016 AAC - Participação na Organização de Campanhas ou Programas de Ação Social
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Os alunos podem organizar eventos e campanhas de cunho social,
+ devendo registrar tais eventos e,
+ novamente,
+ solicitar os certificados de participação.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+A Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Tabela com Categorias de Exigências - AAC"
+
+\end_inset
+
+ mostra as categorias de atividades de AAC presentes no sistema acadêmico.
+\end_layout
+
+\begin_layout Itemize
+No nosso curso o discente deve completar 60h de AAC.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela com Categorias de Exigências - AAC
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Tabela com Categorias de Exigências - AAC"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="1cm">
+<column alignment="center" valignment="top" width="16cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Código
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Nome
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+006
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+AAC - Atividades de Iniciação Científica
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+007
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+AAC - Atividades de Iniciação à Docência
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+008
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+AAC - Atividades de Iniciação Tecnológica
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+009
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+AAC - Atividades de Monitoria
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+010
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+AAC - Curso Formativo de Idiomas ou de Comunicação e Expressão
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+011
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+AAC - Representação Estudantil em Colegiados
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+012
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+AAC - Publicação de Artigo em Revista Científica Indexada
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+013
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+AAC - Participação em Empresa Junior ou Startup
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+015
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+AAC - Participação em Eventos Científico ou Culturais (Local,
+ Nacional ou Internacional)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+016
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+AAC - Participação na Organização de Campanhas ou Programas de Ação Social
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+037
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+AAC - Atividades de Imersão
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+UENF003 - Estágio Curricular Obrigatório 
+\end_layout
+
+\begin_layout Itemize
+Cursos de engenharia requerem que o aluno faça o estágio curricular obrigatório.
+\end_layout
+
+\begin_layout Itemize
+No nosso caso o aluno deve fazer o estágio obrigatório,
+ de 170h,
+ no nono e/ou décimo períodos.
+\end_layout
+
+\begin_layout Itemize
+O aluno só consegue se matricular se tiver concluído 75% da sua carga horária.
+\end_layout
+
+\begin_layout Itemize
+Sugerimos,
+ fortemente,
+ que o aluno do curso de engenharia de petróleo não faça diversos estágios.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+O MEC reduziu o tempo de integralização dos curso de +100% (um curso de 5 anos poderia ser feito em 10 anos),
+ para +50% (um curso de 5 anos deve ser feito em até 7.5 anos).
+ 
+\end_layout
+
+\begin_layout Itemize
+Como o aluno consome muito tempo no estágio,
+ estágios extras podem prejudicar seu tempo de formação e levar ao jubilamento.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+UENF013 - Atividades Curriculares de Extensão 
+\end_layout
+
+\begin_layout Itemize
+018 ACE I - Participação em Projetos e Programas de Editais da PROEX
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Os professores cadastram,
+ junto a PROEX,
+ projetos e programas de extensão.
+\end_layout
+
+\begin_layout Itemize
+O aluno que participa de projetos de extensão acumula as horas associadas a cada atividade.
+\end_layout
+
+\begin_layout Itemize
+No final o aluno recebe um certificado de participação emitido pela PROEX.
+\end_layout
+
+\begin_layout Description
+Dica:
+ sempre que possível dê preferência a atividades de extensão aprovadas pela PROEX.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+019 ACE I - Participação em Projetos Isolados de Extensão Cadastrados na PROEX
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Um projeto isolado de extensão é geralmente menor,
+ mais simples e de mais curta duração.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+022 ACE II - Organização de Eventos de Extensão para Formação/Atualização de Público Alvo
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+São eventos de formação específicos,
+ como mini-cursos.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+023 ACE II - Organização de Curso de Formação/Atualização de Público Alvo
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+São eventos de formação específicos,
+ como cursos (média e longa duração).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+024 ACE II - Expositor/Organizador de Eventos para Popularização da Ciência
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Participação em eventos de divulgação científica.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+025 ACE II - Participação em Comissão Organizadora de Campanhas ou Programas Sociais
+\end_layout
+
+\begin_layout Itemize
+027 ACE III - Eventos de Capacitação (Educação Continuada) para Professores da Rede Pública de Educação Básica
+\end_layout
+
+\begin_layout Itemize
+028 ACE III - Protagonizar Aulas de Reforço Escolar sob supervisão na Rede Pública
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Um exemplo seria alunos do curso darem aulas de reforço em colégios.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+030 ACE III - Prestação de Assessoria,
+ Consultoria,
+ Curadoria em Atividades ou Serviços para Públicos-Alvo Específicos
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Um exemplo seria participar da organização de um evento científico e tecnológico de uma associação profissional.
+\end_layout
+
+\begin_layout Itemize
+No caso do curso de petróleo um exemplo seria ajudar na organização de eventos da SPE-Macaé.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+031 ACE III - Atendimento ao Público em Espaços de Cultura,
+ Ciência e Tecnologia (museus,
+ cineclubes,
+ galerias e afins)
+\end_layout
+
+\begin_layout Itemize
+032 ACE III - Organização e/ou Redação de jornal ou informativo Socio-cultural,
+ Científico-Tecnológico do Curso ou da UENF
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Um exemplo seria a construção de um SITE de divulgação de temas pertinentes ao seu curso,
+ um site que vise a integração com a sociedade,
+ com as empresas e indústrias de sua área de formação.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Veja na Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Tabela com Categorias de Exigências - ACE"
+
+\end_inset
+
+ os itens associados as exigências de extensão.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela com Categorias de Exigências - ACE
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Tabela com Categorias de Exigências - ACE"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="13" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="1cm">
+<column alignment="center" valignment="top" width="16cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Código
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Nome
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+018
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ACE I - Participação em Projetos e Programas de Editais da PROEX
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+019
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ACE I - Participação em Projetos Isolados de Extensão Cadastrados na PROEX
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+022
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ACE II - Organização de Eventos de Extensão para Formação/Atualização de Público Alvo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+023
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ACE II - Organização de Curso de Formação/Atualização de Público Alvo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+024
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ACE II - Expositor/Organizador de Eventos para Popularização da Ciência
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+025
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ACE II - Participação em Comissão Organizadora de Campanhas ou Programas Sociais
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+027
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ACE III - Eventos de Capacitação (Educação Continuada) para Professores da Rede Pública de Educação Básica
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+028
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ACE III -Protagonizar Aulas de Reforço Escolar sob supervisão na Rede Pública
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+030
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ACE III - Prestação de Assessoria,
+ Consultoria,
+ Curadoria em Atividades ou Serviços para Públicos-Alvo Específicos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+031
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ACE III - Atendimento ao Público em Espaços de Cultura,
+ Ciência e Tecnologia (museus,
+ cineclubes,
+ galerias e afins)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+032
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\nospellcheck off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ACE III - Organização e/ou Redação de jornal ou informativo Socio-cultural,
+ Científico-Tecnológico do Curso ou da UENF
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+UENF016 - Projeto de Trabalho de Conclusão de Curso 
+\end_layout
+
+\begin_layout Standard
+Historicamente,
+ o curso de engenharia de petróleo tinha duas disciplinas de TCC:
+ TCC I e TCC II.
+\end_layout
+
+\begin_layout Itemize
+Como era:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A aluno se matriculava na disciplina TCC I.
+\end_layout
+
+\begin_layout Itemize
+Assistia aulas sobre metodologia científica.
+\end_layout
+
+\begin_layout Itemize
+Desenvolvia os primeiros capítulos de seu TCC.
+\end_layout
+
+\begin_layout Itemize
+Defendia os primeiros capítulos.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Como é:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Atualmente o aluno faz as mesmas coisas,
+ mas agora na forma de exigência,
+ o que permite defesas fora do calendário acadêmico.
+\end_layout
+
+\begin_layout Itemize
+Exigência:
+ UENF016 - Projeto de Trabalho de Conclusão de Curso - 68h
+\end_layout
+
+\begin_layout Itemize
+Desenvolve os primeiros capítulos de seu TCC.
+\end_layout
+
+\begin_layout Itemize
+Defende os primeiros capítulos na turma de seminários.
+\end_layout
+
+\begin_layout Itemize
+Banca:
+ professor da disciplina e orientador.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Capítulos a serem entregues:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+TCC no formato de 
+\emph on
+monografia
+\emph default
+:
+
+\emph on
+ Introdução 
+\emph default
+(escopo e objetivos do trabalho),
+ 
+\emph on
+Revisão Bibliográfica 
+\emph default
+(leitura de artigos) e 
+\emph on
+Metodologia 
+\emph default
+(definição das metodologias,
+ etapas e cronograma).
+\end_layout
+
+\begin_layout Itemize
+TCC no formato de 
+\emph on
+projeto
+\emph default
+:
+ Escopo do Problema,
+ Elaboração,
+ Análise,
+ Projeto.
+\end_layout
+
+\begin_layout Itemize
+Banca:
+ professor da disciplina e orientador.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+UENF001 - Trabalho de Conclusão de Curso 
+\end_layout
+
+\begin_layout Itemize
+Como era:
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+O aluno fazia a disciplina de TCC II :
+ 
+\end_layout
+
+\begin_layout Itemize
+Desenvolvia a parte final do seu TCC.
+\end_layout
+
+\begin_layout Itemize
+Banca:
+ banca de professores aprovadas pelo colegiado do curso.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Como é:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+O aluno termina seu TCC.
+\end_layout
+
+\begin_layout Itemize
+Banca:
+ banca de professores aprovadas pelo colegiado do curso.
+\end_layout
+
+\begin_layout Itemize
+Registro da defesa no sistema acadêmico através da exigência UENF001 - Trabalho de Conclusão de Curso.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Capítulos a serem entregues:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+TCC no formato de 
+\emph on
+monografia
+\emph default
+:
+
+\emph on
+ Introdução 
+\emph default
+(escopo e objetivos do trabalho),
+ 
+\emph on
+Revisão Bibliográfica 
+\emph default
+(leitura de artigos) e 
+\emph on
+Metodologia 
+\emph default
+(definição das metodologias,
+ etapas e cronograma).
+
+\emph on
+ Desenvolvimento 
+\emph default
+(modelos,
+ equações,
+ softwares,
+ ensaios),
+ 
+\emph on
+Resultados 
+\emph default
+(simulações e resultados),
+ 
+\emph on
+Análise dos Resultados 
+\emph default
+(comparação com a bibliografia),
+ 
+\emph on
+Conclusões,
+ Referências Bibliográficas 
+\emph default
+e
+\emph on
+ Apêndices.
+\end_layout
+
+\begin_layout Itemize
+TCC no formato de 
+\emph on
+projeto
+\emph default
+:
+ Escopo do Problema(escopo e objetivos do trabalho),
+ Elaboração(revisão bibliográfica,
+ revisão de problemas e sistemas semelhantes,
+ definição de abrangência e limites),
+ Análise (desenvolvimento dos modelos),
+ Projeto (definição da arquitetura da solução,
+ seleção de bibliotecas,
+ seleção de pessoal,
+ equipamentos,
+ insumos),
+ Implementação (construção da solução tecnológica),
+ Testes(testes de unidade,
+ componentes,
+ integração),
+ Documentação (manual do desenvolvedor,
+ manual do usuário,
+ manual técnico científico).
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+O aplicativo Check-In Serpro
+\end_layout
+
+\begin_layout Subsection
+O que é o Check-In Serpro
+\end_layout
+
+\begin_layout Subsection
+Como instalar
+\end_layout
+
+\begin_layout Subsection
+Como configurar um evento
+\end_layout
+
+\begin_layout Subsection
+Como registrar presenças
+\end_layout
+
+\begin_layout Subsection
+Como obter a lista de presença
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusões
+\end_layout
+
+\begin_layout Standard
+[Agora,
+ descreva em detalhes as conclusões do trabalho.....].
+ 
+\end_layout
+
+\begin_layout Itemize
+[É uma síntese conclusiva de tudo o que foi feito.
+ ]
+\end_layout
+
+\begin_layout Itemize
+[Deve relembrar o escopo do trabalho,
+ o método,
+ os dados e equipamentos utilizados.
+ ]
+\end_layout
+
+\begin_layout Itemize
+[Deve esclarecer os pontos principais do trabalho,
+ os resultados a que se chegou.
+ ]
+\end_layout
+
+\begin_layout Itemize
+[Deve responder as perguntas da introdução.
+ Falar dos modelos/algoritmos desenvolvidos,
+ dos problemas resolvidos e resultados obtidos.
+ ]
+\end_layout
+
+\begin_layout Itemize
+[Deve corroborar os resultados com dados estatísticos,
+ com comparações com outros trabalhos.]
+\end_layout
+
+\begin_layout Itemize
+[Deve concluir se as hipóteses foram "rejeitadas" ou "não foram rejeitadas".
+ Nunca dizemos que as hipóteses foram aceitas.]
+\end_layout
+
+\begin_layout Itemize
+[Deve finalizar e arrematar o trabalho de forma segura.]
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "bibliografia"
+options "apalike"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
