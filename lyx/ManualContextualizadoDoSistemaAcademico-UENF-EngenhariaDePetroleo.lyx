@@ -174,7 +174,7 @@
 \papersides 1
 \paperpagestyle fancy
 \tablestyle default
-\tracking_changes true
+\tracking_changes false
 \output_changes false
 \change_bars false
 \postpone_fragile_content false
@@ -333,21 +333,93 @@ name "chap:Introdução"
 
 \end_layout
 
-\begin_layout Itemize
-Apresenta-se aqui,
- de forma simples e objetiva,
- um manual contextualizado do sistema acadêmico da UENF.
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancyhead[L]{Manual Contextualizado do Sistema Acadêmico da UENF}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancyhead[C]{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancyhead[R]{
+\backslash
+thepage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancyfoot[L]{André Duarte Bueno}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancyfoot[C]{Rascunho}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fancyfoot[R]{
+\backslash
+today}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-Vamos apresentar informações básicas sobre os PPCs/grades (as disciplinas,
+Apresenta-se aqui
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+,
+ de forma simples e objetiva,
+\end_layout
+
+\end_inset
+
+ um manual contextualizado do sistema acadêmico da UENF.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Informações básicas sobre os PPCs/grades (as disciplinas,
  turmas,
  exigências).
  
 \end_layout
 
 \begin_layout Itemize
-As mudanças no sistema acadêmico com as exigências.
+Mudanças no sistema acadêmico com as exigências.
 \end_layout
 
 \begin_layout Itemize
@@ -367,14 +439,17 @@ literal "false"
  para registro simplificado de presenças.
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
-A descrição aqui apresentada é resumida e bastante direta (usa sentenças) e tem como exemplo o curso de engenharia de petróleo da UENF.
+A descrição aqui apresentada é resumida e direta (usa sentenças) e tem como exemplo o curso de engenharia de petróleo da UENF.
 \end_layout
 
 \begin_layout Description
 Nota:
- este material deve ser apresentado a novos alunos e professores para que entendam o funcionamento dos processos,
- suas etapas formais,
+ este material deve ser apresentado a novos alunos,
+ professores e funcionários para que entendam os conceitos,
+ as funcionalidades,
+ os processos (suas etapas formais),
  o que podemos fazer/resolver e os prazos envolvidos.
 \end_layout
 
@@ -406,7 +481,7 @@ newpage}{}
 \end_layout
 
 \begin_layout Section
-Escopo do Problema
+Escopo do problema
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Escopo-do-Problema"
@@ -453,7 +528,11 @@ Novo PPC/Grade
 \end_layout
 
 \begin_layout Itemize
-Recentemente tivemos o novo PPC e grade aprovados (processo SEI-260009/006299/2022),
+Recentemente tivemos o novo 
+\series bold
+PPC - Projeto Pedagógico do Curso 
+\series default
+e grade aprovados (processo SEI-260009/006299/2022),
  isto implica em um 
 \emph on
 conjunto de novidades que precisam ser apresentadas aos professores,
@@ -468,14 +547,16 @@ Um detalhe que implica em possíveis problemas é o novo
 prazo máximo de conclusão do curso
 \emph default
 ,
- pelas novas regras do MEC serão 7.5 anos (prazo * 1.5,
- 50%).
+ pelas novas regras do MEC serão 7.5 anos (prazo_normal * 1.5,
+ +50%,
+ antes era +100%).
 \end_layout
 
 \begin_layout Itemize
 Outro detalhe é a implementação de 
 \emph on
-mecanismos para atender as demandas de exigências de AAC (60h) e Extensão (411h)
+mecanismos para atender as demandas de exigências de AAC (60h) e Extensão (411h,
+ 10% da carga horária)
 \emph default
 .
 \end_layout
@@ -526,7 +607,11 @@ Alterações no sistema acadêmico
 \end_layout
 
 \begin_layout Itemize
-A PROGRAD,
+A 
+\series bold
+PROGRAD - Pró-reitoria de Graduação
+\series default
+,
  com a direção do Prof.
  Juraci Sampaio,
  implementou uma série de 
@@ -534,7 +619,7 @@ A PROGRAD,
 novidades no sistema acadêmico
 \emph default
 ,
- incluindo alterações nas disciplinas (cadastro),
+ incluindo alterações nas disciplinas (cadastro e atualização),
  nas turmas e a inclusão das turmas de exigências.
 \end_layout
 
@@ -565,12 +650,12 @@ Como as exigências de extensão serão realizadas,
 \end_layout
 
 \begin_layout Itemize
-Atualmente as presenças dos discentes são coletadas em sala de aula usando i) uma folha de assinaturas avulsa ou a ii) folha de 
-\emph on
-Ata de Presença 
-\emph default
-ou iii) o Diário de Classe,
- estes últimos dois gerados pelo sistema acadêmico.
+Atualmente as presenças dos discentes são coletadas em sala de aula usando 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Uma folha de assinaturas avulsa 
 \end_layout
 
 \begin_deeper
@@ -578,11 +663,32 @@ ou iii) o Diário de Classe,
 Um problema que ocorre é um aluno assinar por outro - uma fraude!
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
-O diário de classe requer chamada,
+Folha de 
+\emph on
+Ata de Presença 
+\emph default
+(gerado pelo sistema acadêmico)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Um problema que ocorre é um aluno assinar por outro - uma fraude!
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Diário de Classe (gerado pelo sistema acadêmico)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+O diário de classe reduz fraudes mas requer chamada,
  o que consome tempo da aula.
 \end_layout
 
+\end_deeper
 \end_deeper
 \begin_layout Itemize
 No final de cada mês as presenças são lançadas usando o aplicativo online 
@@ -677,7 +783,11 @@ Apresentar as novidades do sistema acadêmico.
 \end_layout
 
 \begin_layout Itemize
-Apresentar a instalação e uso do aplicativo - Check-in - GovBr - Serpro.
+Apresentar a instalação e uso do aplicativo - 
+\emph on
+Check-in 
+\emph default
+- GovBr - Serpro.
 \end_layout
 
 \begin_layout Standard
@@ -703,6 +813,81 @@ newpage}{}
 \end_layout
 
 \begin_layout Section
+Organização do documento
+\end_layout
+
+\begin_layout Itemize
+No Capítulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:PPC-e-Grade"
+
+\end_inset
+
+ veremos informações sobre o PPC e Grade.
+\end_layout
+
+\begin_layout Itemize
+No Capítulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Disciplinas"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ veremos informações sobre as disciplinas.
+\end_layout
+
+\begin_layout Itemize
+No Capítulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Turmas"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ veremos informações sobre as turmas.
+\end_layout
+
+\begin_layout Itemize
+No Capítulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Exigências"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ veremos informações sobre as exigências.
+\end_layout
+
+\begin_layout Itemize
+No Capítulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Conclusões"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ veremos as conclusões.
+\end_layout
+
+\begin_layout Chapter
 PPC e Grade
 \begin_inset CommandInset label
 LatexCommand label
@@ -713,7 +898,7 @@ name "sec:PPC-e-Grade"
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 PPC
 \begin_inset CommandInset label
 LatexCommand label
@@ -725,7 +910,8 @@ name "subsec:PPC"
 \end_layout
 
 \begin_layout Itemize
-O PPC (Projeto Pedagógico do Curso) é o documento oficial que define:
+O PPC - Projeto Pedagógico do Curso,
+ é o documento oficial que define:
 \end_layout
 
 \begin_deeper
@@ -735,17 +921,27 @@ O PPC (Projeto Pedagógico do Curso) é o documento oficial que define:
 O quê
 \series default
 :
- Os objetivos do curso e o perfil do profissional (engenheiro de petróleo) que se quer formar.
+ 
 \end_layout
 
 \begin_deeper
+\begin_layout Itemize
+Os objetivos do curso e o perfil do profissional que se quer formar.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 
 \series bold
 Como
 \series default
 :
- A estrutura curricular (disciplinas,
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A estrutura curricular (disciplinas,
  carga horária,
  sequência),
  as metodologias de ensino e as formas de avaliação.
@@ -792,7 +988,11 @@ O PPC aprovado em todas as instâncias é um requisito para o funcionamento do c
 \begin_layout Itemize
 Dentro do PPC temos uma grade com um conjunto de disciplinas obrigatórias,
  optativas e exigências a serem realizadas pelos discentes/alunos.
- Veja grade na seção 
+ 
+\end_layout
+
+\begin_layout Itemize
+Veja exemplo de grade na seção 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Grade"
@@ -820,7 +1020,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 PPC - Engenharia de Exploração e Produção de Petróleo
 \begin_inset CommandInset label
 LatexCommand label
@@ -832,94 +1032,94 @@ name "subsec: PPC - Engenharia de Exploração e Produção de Petróleo"
 \end_layout
 
 \begin_layout Itemize
-O PPC do curso de engenharia de petróleo contém as seguintes seções:
+O PPC do curso de engenharia de petróleo contém as seguintes seções (é o padrão de boa parte dos PPCs na UENF):
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-IDENTIFICAÇÃO DO CURSO
+Identificação do curso
 \end_layout
 
 \begin_layout Itemize
-HISTÓRICO DO CURSO
+Histórico do curso
 \end_layout
 
 \begin_layout Itemize
-JUSTIFICATIVA DO CURSO NO CONTEXTO SÓCIO-ECONÔMICO DE SUA INSERÇÃO REGIONAL
+Justificativa do curso no contexto sócio-econômico de sua inserção regional
 \end_layout
 
 \begin_layout Itemize
-PERFIL DO EGRESSO
+Perfil do egresso
 \end_layout
 
 \begin_layout Itemize
-COMPETÊNCIAS E HABILIDADES
+Competências e habilidades
 \end_layout
 
 \begin_layout Itemize
-PRINCÍPIOS E CONCEPÇÃO DO CURSO
+Princípios e concepção do curso
 \end_layout
 
 \begin_layout Itemize
-INFRA-ESTRUTURA DO CICLO PROFISSIONALIZANTE DO CURSO
+Infra-estrutura do ciclo profissionalizante do curso
 \end_layout
 
 \begin_layout Itemize
-CORPO DOCENTE
+Corpo docente
 \end_layout
 
 \begin_layout Itemize
-ESTRUTURA CURRICULAR DO CURSO
+Estrutura curricular do curso
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-DISTRIBUIÇÃO DA CARGA HORÁRIA DO CURSO
+Distribuição da carga horária do curso
 \end_layout
 
 \begin_layout Itemize
-DISCIPLINAS DE ATIVIDADES TEÓRICAS OBRIGATÓRIAS
+Disciplinas de atividades teóricas obrigatórias
 \end_layout
 
 \begin_layout Itemize
-DISCIPLINAS DE ESCOLHA CONDICIONADA OPTATIVAS
+Disciplinas de escolha condicionada optativas
 \end_layout
 
 \begin_layout Itemize
-DISCIPLINAS DE CONHECIMENTOS COMPLEMENTARES.
+Disciplinas de conhecimentos complementares
 \end_layout
 
 \begin_layout Itemize
-ESTÁGIO
+Estágio
 \end_layout
 
 \begin_layout Itemize
-TRABALHO DE CONCLUSÃO DE CURSO - TCC
+Trabalho de conclusão de curso - TCC
 \end_layout
 
 \begin_layout Itemize
-ATIVIDADES ACADÊMICAS COMPLEMENTARES - AAC
+Atividades acadêmicas complementares - AAC
 \end_layout
 
 \begin_layout Itemize
-ATIVIDADES CURRICULARES DE EXTENSÃO - ACE
+Atividades curriculares de extensão - ACE
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-FORMAS DE ACESSO AO CURSO
+Formas de acesso ao curso
 \end_layout
 
 \begin_layout Itemize
-AVALIAÇÃO DO PROCESSO DE ENSINO E APRENDIZAGEM
+Avaliação do processo de ensino e aprendizagem
 \end_layout
 
 \begin_layout Itemize
-NÚCLEO DOCENTE ESTRUTURANTE DO CURSO
+Núcleo docente estruturante do curso - NDE
 \end_layout
 
 \begin_layout Itemize
-CONSIDERAÇÕES FINAIS
+Considerações finais
 \end_layout
 
 \end_deeper
@@ -941,7 +1141,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Grade
 \begin_inset CommandInset label
 LatexCommand label
@@ -962,25 +1162,19 @@ A grade mostra:
 
 \begin_deeper
 \begin_layout Itemize
-o nome do curso.
+O nome do curso.
 \end_layout
 
 \begin_layout Itemize
-as disciplinas obrigatórias (período,
- carga horária,
- co-requisitos e dependências).
+As disciplinas obrigatórias.
 \end_layout
 
 \begin_layout Itemize
-as disciplinas optativas (período,
- carga horária,
- co-requisitos e dependências).
+As disciplinas optativas.
 \end_layout
 
 \begin_layout Itemize
-as exigências (período,
- carga horária,
- co-requisitos e dependências).
+As exigências.
 \end_layout
 
 \end_deeper
@@ -993,20 +1187,30 @@ reference "fig:Exemplo de Grade: Curso de Engenharia de Petróleo - 2023"
 \end_inset
 
  a grade do Curso de Engenharia de Petróleo.
- 
+ Observe que:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Observe que temos,
- a cada semestre,
+Este é o padrão para a maioria dos cursos da UENF a partir de 2025.
+\end_layout
+
+\begin_layout Itemize
+Temos a cada semestre,
  um conjunto de disciplinas obrigatórias,
  algumas disciplinas optativas e algumas exigências.
  
 \end_layout
 
 \begin_layout Itemize
-Este é o padrão para a maioria dos cursos da UENF a partir de 2025.
+Nosso diferencial é que já migramos para a grade nova praticamente todos os alunos,
+ apenas 3 formandos permaneceram na grade antiga.
+\end_layout
+
+\begin_layout Itemize
+Para cada disciplinas temos o período indicado,
+ sua carga horária,
+ e as setas indicam co-requisitos e dependências.
 \end_layout
 
 \end_deeper
@@ -1017,7 +1221,6 @@ Programação:
 
 \series default
  Uma grade é algo conceitual (uma classe) que representa um conjunto de objetos do tipo grade.
- 
 \end_layout
 
 \begin_deeper
@@ -1049,7 +1252,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Grade - Engenharia de Exploração e Produção de Petróleo
 \begin_inset CommandInset label
 LatexCommand label
@@ -1140,15 +1343,21 @@ newpage}{}
 \end_layout
 
 \begin_layout Itemize
-A título de curiosidade veja na Figura 
+A título de curiosidade,
+ veja na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Exemplo de Grade: Curso de Engenharia de Petróleo - 2013"
 
 \end_inset
 
+,
  a grade 2013 do curso de engenharia de petróleo da UENF.
- Observe que tivemos a retirada de diversas disciplinas importantes para atender a exigência de 10% de extensão.
+ 
+\end_layout
+
+\begin_layout Itemize
+Observe que tivemos a retirada de diversas disciplinas importantes para atender a exigência de 10% de extensão.
 \end_layout
 
 \begin_layout Standard
@@ -1216,7 +1425,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Chapter
 Disciplinas
 \begin_inset CommandInset label
 LatexCommand label
@@ -1227,7 +1436,7 @@ name "sec:Disciplinas"
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 O que é uma disciplina?
 \begin_inset CommandInset label
 LatexCommand label
@@ -1239,12 +1448,12 @@ name "subsec:O que é uma disciplina?"
 \end_layout
 
 \begin_layout Itemize
-Uma disciplina é uma unidade acadêmica geralmente associada a uma área do conhecimento.
+Uma disciplina é uma unidade acadêmica associada a uma área ou sub-área do conhecimento.
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-De um modo geral as disciplinas estão relacionadas a 
+Veja a 
 \begin_inset CommandInset href
 LatexCommand href
 name "tabela de conhecimentos do CNPq"
@@ -1273,7 +1482,7 @@ Tem um código,
 \end_layout
 
 \begin_layout Itemize
-Tem data criação,
+Tem data de criação,
  carga horária,
  pré-requisitos,
  co-requisitos,
@@ -1326,7 +1535,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Vínculo com a tabela de conhecimentos do CNPq
 \begin_inset CommandInset label
 LatexCommand label
@@ -1350,13 +1559,13 @@ reference "fig:Tabela conhecimentos do CNPq"
 \end_layout
 
 \begin_layout Itemize
-Note a relação com as disciplinas e livros.
+Por exemplo:
  
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
-Por exemplo,
- na grade da Figura 
+Na grade da Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Exemplo de Grade: Curso de Engenharia de Petróleo - 2023"
@@ -1365,13 +1574,12 @@ reference "fig:Exemplo de Grade: Curso de Engenharia de Petróleo - 2023"
 
 ,
  temos a disciplina de Física Matemática I,
- cujo conteúdo esta relacionado as EDOs - Equações Diferenciais Ordinárias,
- note na Tabela que esta área tem código 1.01.02.04.3.
- A disciplina de Introdução ao Projeto de Engenharia tem vínculo com as áreas 1.
- 03.08.03.02-0 Metodologia de Projeto do Produto,
- 1.03.03.02-2 Engenharia de Software.
+ cujo conteúdo esta relacionado as EDOs - Equações Diferenciais Ordinárias.
+ Note na Tabela que esta área tem código 1.01.02.04.3.
+ 
 \end_layout
 
+\end_deeper
 \begin_layout Standard
 \begin_inset Float figure
 placement H
@@ -1385,8 +1593,8 @@ status open
 \begin_inset Graphics
 	filename imagens/CNPq/TabelaConhecimentos-CNPq-1.png
 	lyxscale 50
-	width 30text%
-	height 80theight%
+	width 32text%
+	height 90theight%
 	keepAspectRatio
 
 \end_inset
@@ -1395,8 +1603,8 @@ status open
 \begin_inset Graphics
 	filename imagens/CNPq/TabelaConhecimentos-CNPq-2.png
 	lyxscale 50
-	width 30text%
-	height 80theight%
+	width 32text%
+	height 90theight%
 	keepAspectRatio
 
 \end_inset
@@ -1405,8 +1613,8 @@ status open
 \begin_inset Graphics
 	filename imagens/CNPq/TabelaConhecimentos-CNPq-3.png
 	lyxscale 50
-	width 30text%
-	height 80theight%
+	width 32text%
+	height 90theight%
 	keepAspectRatio
 
 \end_inset
@@ -1457,6 +1665,263 @@ newpage}{}
 \end_layout
 
 \begin_layout Subsection
+Vínculo com livros - referências bibliográficas
+\end_layout
+
+\begin_layout Itemize
+As disciplinas costumam estar relacionadas a livros.
+\end_layout
+
+\begin_layout Itemize
+Exemplo:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A disciplina de Introdução ao Projeto de Engenharia tem vínculo com as áreas 1.
+ 03.08.03.02-0 Metodologia de Projeto do Produto,
+ 1.03.03.02-2 Engenharia de Software (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Tabela conhecimentos do CNPq"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Itemize
+E tem diversos livros didáticos associados (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Exemplos de livros disponibilizados na biblioteca virtual"
+
+\end_inset
+
+).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+As ementas tem de incluir referências bibliográficas para livros e artigos.
+\end_layout
+
+\begin_layout Itemize
+No caso da UENF devemos adicionar:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Os livros disponibilizados na biblioteca virtual da UENF,
+ acessível via sistema acadêmico (Minha Biblioteca) (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Exemplos de livros disponibilizados na biblioteca virtual"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Itemize
+Os livros disponibilizados nas bibliotecas físicas (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Exemplos de livros disponibilizados em bibliotecas físicas"
+
+\end_inset
+
+).
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/SistemaAcademico/SistemaAcademico-BibliotecaVirtual-LivrosProjeto-5.png
+	lyxscale 50
+	width 100text%
+	height 30theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/SistemaAcademico/SistemaAcademico-BibliotecaVirtual-LivrosProjeto-2.png
+	lyxscale 50
+	width 54text%
+	height 30theight%
+	keepAspectRatio
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename imagens/SistemaAcademico/SistemaAcademico-BibliotecaVirtual-LivrosProjeto-1.png
+	lyxscale 50
+	width 45text%
+	height 30theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/SistemaAcademico/SistemaAcademico-BibliotecaVirtual-LivrosProjeto-3.png
+	lyxscale 50
+	width 47text%
+	height 30theight%
+	keepAspectRatio
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename imagens/SistemaAcademico/SistemaAcademico-BibliotecaVirtual-LivrosProjeto-4.png
+	lyxscale 50
+	width 52text%
+	height 30theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplos de livros disponibilizados na biblioteca virtual
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Exemplos de livros disponibilizados na biblioteca virtual"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+iftoggle{FormatoApresentacaoTRUE}{
+\backslash
+newpage}{} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/Infraestrutura/BibliotecaFisica.jpg
+	lyxscale 35
+	width 100text%
+	height 80theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplos de livros disponibilizados em bibliotecas físicas
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Exemplos de livros disponibilizados em bibliotecas físicas"
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+trocar a foto
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+iftoggle{FormatoApresentacaoTRUE}{
+\backslash
+newpage}{} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Propriedades de uma disciplina
 \begin_inset CommandInset label
 LatexCommand label
@@ -1732,16 +2197,25 @@ Lista de livros e artigos utilizados.
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+trocar pela ementa de introdução ao projeto
 \end_layout
 
-\begin_deeper
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 
 \series bold
 Sigla
 \series default
 :
- LEP01447
+ LEP01348
 \end_layout
 
 \begin_layout Itemize
@@ -1750,7 +2224,7 @@ Sigla
 Nome
 \series default
 :
- Programação Orientada a Objeto em C++
+ Introdução ao Projeto de Engenharia
 \end_layout
 
 \begin_layout Itemize
@@ -1858,23 +2332,52 @@ Após aprovação na disciplina o aluno deve saber:
 \end_layout
 
 \begin_layout Itemize
-Desenvolver soluções de softwares utilizando orientação a objetos e modelagem UML
+Conceber,
+ elaborar,
+ analisar e projetar sistemas,
+ produtos (bens e serviços),
+ componentes ou processos de forma criativa,
+ desejável e viável,
+ técnica e economicamente,
+ nos contextos em que serão aplicadas;
+ Conceitos básicos de modelagem e projeto de engenharia;
 \end_layout
 
 \begin_layout Itemize
-Usar conceitos básicos e intermediários de C++
+Elaborar o problema de forma a compreender os fenômenos por meio de modelos simbólicos,
+ físico matemático (equações),
+ modelos computacionais(UML) e outros(esboços).
 \end_layout
 
 \begin_layout Itemize
-Usar bibliotecas padrões de C++
+Realizar a Análise que envolve a capacidade de modelar os fenômenos(de sistemas/produtos/serviços),
+ utilizando ferramentas (incluindo estatísticas,
+ softwares,
+ simuladores,
+ uso de inteligência artificial,
+ entre outras).
+ Sempre considerando os aspectos macro e micro,
+ estáticos e dinâmicos dos sistemas (diferentes escalas).
 \end_layout
 
 \begin_layout Itemize
-Usar compiladores (g++)
+Verificar e validar os modelos por meio de técnicas adequadas;
+ Por exemplo,
+ em termos de software de engenharia conceber os testes do sistema.
 \end_layout
 
 \begin_layout Itemize
-Usar sistemas de controle de versões (git/github).
+Documentar os sistemas desenvolvidos usando sistemas e ferramentas profissionais de engenharia,
+ como exemplo uso de TeX/LaTeX/LyX.
+\end_layout
+
+\begin_layout Itemize
+Aplicar conceitos de administração gestão para planejar,
+ supervisionar,
+ elaborar e coordenar projetos e serviços de Engenharia;
+ Por exemplo o uso de ferramentas de gestão de documentos e projetos,
+ como o github projects.
+ ...
 \end_layout
 
 \end_deeper
@@ -1888,76 +2391,41 @@ Ementa
 
 \begin_deeper
 \begin_layout Itemize
-Introdução ao C++;
- História,
- 
-\emph on
-Modern
-\emph default
- C++;
- Etapas de compilação;
- Diretrizes de pré-processador;
- Módulos;
- Conceitos básicos de C++,
- sintaxe,
- escopo;
- Operadores;
- Estruturas de controle e repetição;
- Referências;
- Funções;
- Sobrecarga de funções;
- Tipos(padrões,
- do usuário,
- de bibliotecas);
- Gerenciamento de memória;
- Estruturas de dados;
- Funções lambda;
- Orientação a Objetos com C++;
- classes,
- objetos,
- atributos;
- Métodos e sobrecarga de métodos;
- Construtor e destrutor,
- Associações,
- amizade/friend,
- herança,
- [herança múltipla],
- polimorfismo;
- Sobrecarga e de operadores;
- A biblioteca de entrada e saída de dados (
-\emph on
-streams
-\emph default
-),
- redirecionamento,
- acesso a arquivos de disco (
-\emph on
-filesystem
-\emph default
-);
- A biblioteca de gabaritos de C++ (a STL),
- iteradores,
- containers(<<vector>>,
- <<deque>>,
- <<list>>,
- <<stack>>,
- <<queue>>,
- <<set>>,
- <<map>>),
- objetos funções e funções genéricas;
- As bibliotecas numéricas de C++:
- cmath,
- numbers,
- <<random>>,
- <<complex>>,
- <<random>>;
- Bibliotecas úteis:
- <<pair>>,
- <<tuple>>,
- <<variant>>,
- <<optional>>,
- <<any>>.
- Ensino por metodologia tradicional (teoria/aplicação prática) ou através do uso de projetos de engenharia.
+Introdução a modelagem e projeto de engenharia (conceitos e definições);
+\end_layout
+
+\begin_layout Itemize
+Introdução à metodologia científica e a pesquisa científica e tecnológica (inovação);
+\end_layout
+
+\begin_layout Itemize
+O ciclo do projeto de engenharia e do método científico e tecnológico;
+\end_layout
+
+\begin_layout Itemize
+Administração e gestão de projeto (planejamento,
+ execução,
+ controle);
+\end_layout
+
+\begin_layout Itemize
+Administração – uso de metodologias tradicionais;
+\end_layout
+
+\begin_layout Itemize
+Administração – uso de metodologias ágeis;
+\end_layout
+
+\begin_layout Itemize
+Administração – ferramentas como git,
+ github,
+ github projects,
+ inteligência artificial e outras;
+\end_layout
+
+\begin_layout Itemize
+Exemplos aplicados ao TCC,
+ engenharia de software e a engenharia de petróleo.
 \end_layout
 
 \begin_layout Itemize
@@ -2008,10 +2476,10 @@ Bibliografia
 
 \begin_deeper
 \begin_layout Itemize
-Lista de livros e artigos utilizados.
+Lista de livros e artigos utilizados,
+ material para estudo em casa.
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset ERT
@@ -2031,7 +2499,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Estados associados a uma disciplina
 \begin_inset CommandInset label
 LatexCommand label
@@ -2043,22 +2511,15 @@ name "subsec:Estados associados a uma disciplina"
 \end_layout
 
 \begin_layout Itemize
+Um estado depende das propriedades do objeto.
+\end_layout
+
+\begin_layout Itemize
 Um estado define a situação atual de um objeto e permite identificar os possíveis comportamentos do objeto.
- É normal fazermos um diagrama de máquina de estado para entender os possíveis comportamentos de um objeto.
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-mostrar exemplo de diagrama de máquina de estado
 \end_layout
 
-\begin_layout Plain Layout
-fazer diagrama de estado para uma disciplina
-\end_layout
-
-\end_inset
-
-
+\begin_layout Itemize
+Eventos externos podem alterar o estado de um objeto.
 \end_layout
 
 \begin_layout Itemize
@@ -2094,7 +2555,15 @@ validada
 
 \begin_deeper
 \begin_layout Itemize
-Após o cadastro e aprovação nos colegiados a disciplina passa para o estado 
+Após o cadastro e o evento 
+\begin_inset Quotes eld
+\end_inset
+
+aprovação nos colegiados
+\begin_inset Quotes erd
+\end_inset
+
+ a disciplina passa para o estado 
 \emph on
 validada
 \emph default
@@ -2145,19 +2614,112 @@ Uma disciplina que foi desativada passa para o estado inativa.
 \end_layout
 
 \begin_layout Itemize
-A mesma permanece no registro do sistema acadêmico.
+A mesma permanece no registro do sistema acadêmico,
+ mas no estado inativa.
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 É mantida pois faz parte do extrato e histórico dos alunos que a cursaram.
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 A mesma não pode mais gerar turmas.
 \end_layout
 
 \end_deeper
 \end_deeper
+\begin_layout Itemize
+Exemplo:
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Uma disciplina pode ser criada em 2025.1,
+ validada em 2025.2 e ativada em 2026.1.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+É normal fazermos um diagrama de máquina de estado para entender os possíveis comportamentos de um objeto.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+mostrar exemplo de diagrama de máquina de estado
+\end_layout
+
+\begin_layout Plain Layout
+fazer diagrama de estado para uma disciplina
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema Acadêmico - Disciplinas - Diagrama de Máquina de Estado para uma Disciplina"
+
+\end_inset
+
+ apresenta o diagrama de máquina de estados associado a uma disciplina.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/ModelosSistemaAcademicoHipotetico-ProjetoDisciplina/diagramaDeMaquinaDeEstado-Disciplina.png
+	lyxscale 50
+	width 100text%
+	height 80theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sistema Acadêmico - Disciplinas - Diagrama de Máquina de Estado para uma Disciplina
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sistema Acadêmico - Disciplinas - Diagrama de Máquina de Estado para uma Disciplina"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset ERT
 status open
@@ -2176,7 +2738,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Requisitos associados a uma disciplina
 \begin_inset CommandInset label
 LatexCommand label
@@ -2192,28 +2754,12 @@ Os requisitos são definidos pelos regimentos.
 \end_layout
 
 \begin_layout Itemize
-É um requisito a aprovação da disciplina pelos órgãos colegiados.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Sem a aprovação dos órgãos colegiados a disciplina existe no sistema mas não podemos criar turmas.
-\end_layout
-
-\begin_layout Itemize
-
-\emph on
-Na prática isto significa que se o professor quer ministrar uma disciplina nova deve se preocupar com seu cadastro com cerca de pelo menos três meses de antecedência.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
 É um requisito a inscrição da disciplina no PPC do curso.
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Só são válidas disciplinas constantes do PPC do curso.
+Só são contabilizadas no seu histórico as disciplinas constantes do PPC do curso.
 \end_layout
 
 \begin_layout Itemize
@@ -2234,6 +2780,22 @@ Não faça optativas que não estão listadas na grade do curso!
 É um requisito o cadastro prévio da disciplina no sistema acadêmico.
 \end_layout
 
+\begin_layout Itemize
+É um requisito a aprovação da disciplina pelos órgãos colegiados.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Sem a aprovação dos órgãos colegiados a disciplina existe no sistema mas não podemos criar turmas.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Na prática isto significa que se o professor quer ministrar uma disciplina nova deve se preocupar com seu cadastro com cerca de pelo três meses de antecedência.
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset ERT
 status open
@@ -2252,7 +2814,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Cenários para uma disciplina
 \end_layout
 
@@ -2329,6 +2891,28 @@ newpage}{}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Funcionalidades para disciplinas
+\end_layout
+
+\begin_layout Itemize
+Apresentamos um diagrama de caso de uso que mostra,
+ de forma geral,
+ possíveis cenários de uso do módulo/componente 
+\begin_inset Quotes eld
+\end_inset
+
+disciplinas
+\begin_inset Quotes erd
+\end_inset
+
+ no sistema acadêmico.
+\end_layout
+
+\begin_layout Itemize
+Veremos a seguir como estes casos de uso foram implementados.
 \end_layout
 
 \begin_layout Subsection
@@ -2439,7 +3023,14 @@ reference "fig:Sistema Acadêmico - Cadastro de nova disciplina - 1"
 
 \begin_deeper
 \begin_layout Itemize
-Aqui temos de pesquisar todos os códigos utilizados (veja pesquisa) e então selecionar um código novo,
+Aqui temos de pesquisar todos os códigos utilizados (veja seção 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Funcionalidade: pesquisar disciplina"
+
+\end_inset
+
+) e então selecionar um código novo,
  nunca utilizado.
  
 \end_layout
@@ -2447,7 +3038,11 @@ Aqui temos de pesquisar todos os códigos utilizados (veja pesquisa) e então se
 \begin_layout Itemize
 Você pode manter o nome de disciplinas antigas,
  mas o ideal é alterar.
- Toda disciplina esta vinculada a um centro e laboratório.
+ 
+\end_layout
+
+\begin_layout Itemize
+Toda disciplina esta vinculada a um centro e laboratório.
  
 \end_layout
 
@@ -2579,14 +3174,26 @@ reference "fig:Sistema Acadêmico - Cadastro de nova disciplina - 3"
 \end_inset
 
  mostra a entrada de informações sobre pré-requisitos e co-requisitos.
- A lista de disciplinas que o aluno já deve ter cursado com aprovação.
+ 
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
-Note que o padrão é a disciplina ter 2 provas e exame final.
- O mínimo são 2 avaliações.
+Um pré-requisito é uma disciplina que o aluno já deve ter cursado com aprovação.
 \end_layout
 
+\end_deeper
+\begin_layout Itemize
+Note que o padrão é a disciplina ter duas provas e exame final.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+O mínimo são duas avaliações.
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset Float figure
 placement H
@@ -2642,7 +3249,17 @@ reference "fig:Sistema Acadêmico - Cadastro de nova disciplina - 4"
 \end_inset
 
  mostra o registro dos objetivos (uma novidade,
- existe um padrão a ser seguido).
+ existe um padrão a ser seguido
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+link para modelo padrão de ementa
+\end_layout
+
+\end_inset
+
+).
  
 \end_layout
 
@@ -2704,17 +3321,19 @@ reference "fig:Sistema Acadêmico - Cadastro de nova disciplina - 5"
 
 \end_inset
 
- mostra 
+ mostra:
+ 
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-O cadastro do conteúdo programático detalhado 
+O cadastro do conteúdo programático detalhado.
+ 
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Adicionar os assuntos e a carga horária associada
+Adicionar os assuntos e a carga horária associada.
 \end_layout
 
 \end_deeper
@@ -2723,11 +3342,6 @@ A bibliografia
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-Adicionar livros da biblioteca virtual acessível via sistema acadêmico.
- 
-\end_layout
-
 \begin_layout Itemize
 É obrigatória a pesquisa e inclusão de livros constantes da biblioteca virtual da UENF.
 \end_layout
@@ -2738,7 +3352,11 @@ Acesse o sistema acadêmico.
 \end_layout
 
 \begin_layout Itemize
-Minha biblioteca
+Minha biblioteca.
+\end_layout
+
+\begin_layout Itemize
+Pesquise pelos livros da área e sub-área.
 \end_layout
 
 \end_deeper
@@ -2942,7 +3560,7 @@ O processo de atualização de uma disciplina demora cerca de dois meses.
 \begin_layout Itemize
 Quando queremos atualizar a ementa de uma disciplina,
  geramos uma cópia da ementa,
- atualizamos a ementa e aprovamos a mesma apenas no colegiado do curso.
+ atualizamos a ementa e aprovamos a mesma apenas no NDE e colegiado do curso.
  
 \end_layout
 
@@ -3399,6 +4017,7 @@ Encerrar,
 
 \emph default
  usado para encerrar uma disciplina.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -3461,6 +4080,11 @@ reference "fig:Sistema Acadêmico - Atualização de um disciplina - 2"
 \begin_deeper
 \begin_layout Itemize
 A partir do encerramento da disciplina a mesma não pode mais ter turmas associadas.
+\end_layout
+
+\begin_layout Itemize
+Ou seja,
+ só encerre uma disciplina se não for mais criar turmas associadas.
 \end_layout
 
 \end_deeper
@@ -3528,7 +4152,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Resumo para disciplinas
 \end_layout
 
@@ -3583,7 +4207,7 @@ Atualização de uma disciplina.
 \begin_layout Itemize
 Quando queremos atualizar a ementa de uma disciplina,
  geramos uma cópia da ementa,
- atualizamos a ementa e aprovamos a mesma apenas no colegiado do curso.
+ atualizamos a ementa e aprovamos a mesma apenas no NDE e colegiado do curso.
  Neste caso a ementa antiga passa para o estado 
 \emph on
 inativa 
@@ -3601,7 +4225,7 @@ O processo de atualização de uma disciplina demora cerca de dois meses.
 
 \end_deeper
 \begin_layout Itemize
-Desativação de uma disciplina.
+Desativação de uma disciplina (encerrar disciplina).
 \end_layout
 
 \begin_deeper
@@ -3628,7 +4252,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Chapter
 Turmas
 \begin_inset CommandInset label
 LatexCommand label
@@ -3639,7 +4263,7 @@ name "sec:Turmas"
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 O que é uma turma?
 \begin_inset CommandInset label
 LatexCommand label
@@ -3648,6 +4272,10 @@ name "subsec:O que é uma turma?"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Itemize
+Uma turma é uma realização das atividades teóricas e práticas definidas na disciplina.
 \end_layout
 
 \begin_layout Itemize
@@ -3660,6 +4288,25 @@ Uma turma tem o código da disciplina,
  nome do professor coordenador,
  nome dos professores(es),
  sala/local e hora.
+\end_layout
+
+\begin_layout Itemize
+Note que uma disciplina pode gerar dezenas de turmas.
+\end_layout
+
+\begin_layout Itemize
+Um exemplo são diversas turmas de 
+\emph on
+MAT01101 - Cálculo Diferencial e Integral I
+\emph default
+,
+ cada turma tem seu professor,
+ sala e hora,
+ mas o conteúdo a ser ministrado é o mesmo.
+ Como as turmas de cálculo tem grande número de professores,
+ inclusive professore externos,
+ adotaram um padrão uniforme para conteúdos,
+ listas de exercícios e provas.
 \end_layout
 
 \begin_layout Standard
@@ -3680,7 +4327,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Propriedades de uma turma
 \begin_inset CommandInset label
 LatexCommand label
@@ -3692,7 +4339,15 @@ name "subsec:Propriedades de uma turma"
 \end_layout
 
 \begin_layout Itemize
-Veja a seguir os dados básicos de uma turma,
+Veja a seguir os 
+\begin_inset Quotes eld
+\end_inset
+
+Dados Básicos
+\begin_inset Quotes erd
+\end_inset
+
+ de uma turma,
  como exemplo a turma 
 \emph on
 LEP01111 - Introdução à Engenharia de Petróleo
@@ -3701,10 +4356,6 @@ LEP01111 - Introdução à Engenharia de Petróleo
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-Dados Básicos:
-\end_layout
-
 \begin_layout Itemize
 Código:
  A
@@ -3768,7 +4419,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Estados associados a uma turma
 \begin_inset CommandInset label
 LatexCommand label
@@ -3780,15 +4431,15 @@ name "subsec:Estados associados a uma turma"
 \end_layout
 
 \begin_layout Itemize
-turma sendo criada
+turma sendo criada.
 \end_layout
 
 \begin_layout Itemize
-turma em execução
+turma em execução.
 \end_layout
 
 \begin_layout Itemize
-turma encerrada
+turma encerrada.
 \end_layout
 
 \begin_layout Standard
@@ -3809,7 +4460,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Requisitos associados a uma turma
 \begin_inset CommandInset label
 LatexCommand label
@@ -3825,11 +4476,100 @@ Os requisitos são definidos pelos regimentos.
 \end_layout
 
 \begin_layout Itemize
-É um requisito que as turmas sejam abertas dentro do calendário acadêmico (tem uma data limite).
+É um requisito que as turmas sejam abertas dentro do calendário acadêmico (tem uma data limite para abertura de turmas).
 \end_layout
 
 \begin_layout Itemize
-É um requisito o professor lançar o sistema de avaliação.
+Veja na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema Acadêmico - Calendários - Calendário 2025.1"
+
+\end_inset
+
+ o calendário de 2025.1.
+ Note que:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+O cadastro de turmas ocorre entre 02/12/2024 e 19/02/2025.
+\end_layout
+
+\begin_layout Itemize
+O lançamento de notas e conceitos se estende até 18/07/2025,
+ data em que a disciplina deve ser encerrada.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/SistemaAcademico/SistemaAcademico-Calendarios-2025-1.png
+	width 100text%
+	height 80theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sistema Acadêmico - Calendários - Calendário 2025.1
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sistema Acadêmico - Calendários - Calendário 2025.1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+É um requisito o professor apresentar a ementa,
+ conteúdo programático,
+ bibliografia,
+ metodologia de avaliação e execução.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Isto é feito idealmente no primeiro dia de aula.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+É um requisito o professor 
+\begin_inset Quotes eld
+\end_inset
+
+definir a forma de avaliação
+\begin_inset Quotes erd
+\end_inset
+
+ logo no início do semestre.
 \end_layout
 
 \begin_deeper
@@ -3839,18 +4579,26 @@ Os requisitos são definidos pelos regimentos.
 
 \begin_layout Itemize
 Se a turma tem como critério de avaliação,
- Média/Frequência
+ Média/Frequência (a maior parte dos casos)
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-É um requisito que as presenças devem ser lançadas mensalmente (lá pelo dia 12-16).
+É um requisito que as presenças devem ser lançadas mensalmente (lá pelo dia 12-14).
 \end_layout
 
 \end_deeper
 \end_deeper
 \begin_layout Itemize
-É um requisito que as turmas sejam fechadas/encerradas dentro do calendário acadêmico (tem uma data limite).
+É um requisito que as turmas sejam fechadas/encerradas dentro do calendário acadêmico (tem uma data limite,
+ Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema Acadêmico - Calendários - Calendário 2025.1"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_deeper
@@ -3860,14 +4608,14 @@ Uma turma não encerrada no prazo legal gera muito trabalho extra pois o profess
 
 \end_deeper
 \begin_layout Itemize
-É um requisito para aprovação média superior a 75% e nota superior a 6.0.
+É um requisito para aprovação média superior a 75% de presença e média ponderada das avaliações superior a 6.0.
  
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 Caso tire nota entre 4 e 6,
- terá direito a prova final.
+ o aluno terá direito a prova final.
 \end_layout
 
 \begin_layout Itemize
@@ -3879,7 +4627,76 @@ Após a prova final a média para aprovação é 5.
 Na medida em que o sistema evoluí novos casos de uso e funcionalidades são agregadas ao sistema.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Itemize
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema Acadêmico - Turmas - Diagrama de máquina de estado para um aluno em uma turma"
+
+\end_inset
+
+ mostra um diagrama de máquina de estado para um aluno cursando determinada turma.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Note como os estados definem um comportamento possível,
+ onde esta e para onde pode ir (transições de estado).
+\end_layout
+
+\begin_layout Itemize
+Linhas tracejadas incluem condições para que ocorra a transição de estado.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/ModelosSistemaAcademicoHipotetico-ProjetoDisciplina/Diagrama-de-estados-aluno.png
+	lyxscale 50
+	width 100text%
+	height 80theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sistema Acadêmico - Turmas - Diagrama de máquina de estado para um aluno em uma turma
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sistema Acadêmico - Turmas - Diagrama de máquina de estado para um aluno em uma turma"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Cenários para uma turma
 \begin_inset CommandInset label
 LatexCommand label
@@ -3903,7 +4720,11 @@ reference "fig:Sistema Acadêmico - Turmas - Diagrama de Caso de Uso"
 
 \begin_layout Itemize
 Note que existe uma relação com os requisitos a serem atendidos e os cenários de uso do sistema acadêmico pelos professores.
- Também costuma haver uma relação com as funcionalidades a serem implementadas e disponibilizadas.
+ 
+\end_layout
+
+\begin_layout Itemize
+Também costuma haver uma relação com as funcionalidades a serem implementadas e disponibilizadas.
 \end_layout
 
 \begin_layout Standard
@@ -3970,7 +4791,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Menus para uma turma
 \begin_inset CommandInset label
 LatexCommand label
@@ -4011,13 +4832,13 @@ status open
 \begin_inset Graphics
 	filename imagens/SistemaAcademico/SistemaAcademico-Turmas-0-Menu-1-Acoes.png
 	lyxscale 50
-	width 100text%
+	width 95text%
 	height 80theight%
 	keepAspectRatio
 
 \end_inset
 
-
+ (a)
 \end_layout
 
 \begin_layout Plain Layout
@@ -4025,13 +4846,13 @@ status open
 \begin_inset Graphics
 	filename imagens/SistemaAcademico/SistemaAcademico-Turmas-0-Menu-2-Relatorios.png
 	lyxscale 50
-	width 100text%
+	width 95text%
 	height 80theight%
 	keepAspectRatio
 
 \end_inset
 
-
+(b)
 \end_layout
 
 \begin_layout Plain Layout
@@ -4074,6 +4895,35 @@ newpage}{}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Funcionalidades para turmas
+\end_layout
+
+\begin_layout Itemize
+Apresentamos na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema Acadêmico - Turmas - Diagrama de Caso de Uso"
+
+\end_inset
+
+ um diagrama de caso de uso que mostra,
+ de forma geral,
+ possíveis cenários de uso do módulo/componente 
+\begin_inset Quotes eld
+\end_inset
+
+turmas
+\begin_inset Quotes erd
+\end_inset
+
+ no sistema acadêmico.
+\end_layout
+
+\begin_layout Itemize
+Veremos a seguir como estes casos de uso foram implementados.
 \end_layout
 
 \begin_layout Subsection
@@ -4217,7 +5067,9 @@ reference "fig:Sistema Acadêmico - Turmas - Lista Avaliações, Título, Descri
 
 \end_inset
 
- mostra avaliações.
+ mostra as avaliações caadstradas.
+ Neste caso temos 4 avaliações,
+ 3 provas com peso 3 e uma lista de exercícios com peso 1.
 \end_layout
 
 \begin_layout Standard
@@ -4282,6 +5134,15 @@ reference "fig:Sistema Acadêmico - Turmas - Lista Alunos, Notas, Frequência, S
  suas notas,
  frequência,
  situação.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Na medida em que as falas e avaliações são lançadas é possível ter uma ideia da evolução da turma.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 alignment document
@@ -4369,7 +5230,11 @@ reference "fig:Sistema Acadêmico - Turmas - baixar agenda"
 \end_inset
 
  mostra a funcionalidade baixar agenda do professor.
- O arquivo é salvo em seu computador e pode ser incorporado a sua agenda pessoal.
+ 
+\end_layout
+
+\begin_layout Itemize
+O arquivo pode ser salvo em seu computador/celular e pode ser incorporado a sua agenda pessoal.
 \end_layout
 
 \begin_layout Standard
@@ -4464,21 +5329,6 @@ reference "fig:Sistema Acadêmico - Turmas - definir forma de avaliação - exem
 Note que temos no mínimo 2 avaliações.
 \end_layout
 
-\begin_layout Itemize
-Note que é um requisito um prazo entre as avaliações de cerca de 10 dias.
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-É o tempo de aplicação da prova,
- correções,
- vista de prova,
- eventuais revisões,
- tempo para estudar para próxima prova.
-\end_layout
-
-\end_deeper
 \begin_layout Standard
 \begin_inset Float figure
 placement H
@@ -4538,11 +5388,56 @@ reference "fig:Sistema Acadêmico - Turmas - definir forma de avaliação - exem
 \end_layout
 
 \begin_layout Itemize
+Uma avaliação tem:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Tipo
+\end_layout
+
+\begin_layout Itemize
+Identificador
+\end_layout
+
+\begin_layout Itemize
+Título
+\end_layout
+
+\begin_layout Itemize
+Descrição
+\end_layout
+
+\begin_layout Itemize
+Peso
+\end_layout
+
+\begin_layout Itemize
+Data de realização
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Note que é um requisito um prazo entre as avaliações de cerca de 15 dias.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+É o tempo de aplicação da prova,
+ correções,
+ vista de prova,
+ eventuais revisões,
+ tempo para estudar para próxima prova.
+\end_layout
+
+\begin_layout Itemize
 Se ao salvar houver algum erro,
  exemplo erro com as datas,
  o sistema informa que há um erro.
 \end_layout
 
+\end_deeper
 \begin_layout Standard
 \begin_inset Float figure
 placement H
@@ -4693,6 +5588,13 @@ reference "fig:Sistema Acadêmico - Turmas - Lançar notas - faltas - exemplo"
  mostra o lançamento de faltas em horas.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Se a aula é de 2h uma falta deve ser lançada com o valor 2.
+ Um aluno que faltou 10 aulas terá contabilizadas 20h de falta.
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset Float figure
 placement H
@@ -4791,7 +5693,7 @@ reference "fig:Sistema Acadêmico - Turmas - Lançar notas - avaliações"
 
 \end_inset
 
- mostra as avaliação cadastradas e o botão para lançar as notas das avaliações.
+ mostra as avaliações previamente cadastradas e o botão para lançar as notas das avaliações.
 \end_layout
 
 \begin_layout Standard
@@ -4948,6 +5850,19 @@ name "subsec:Funcionalidade: relatorios"
 \end_layout
 
 \begin_layout Itemize
+Vimos na Figura Veja Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema Acadêmico - Turmas - Menus"
+
+\end_inset
+
+(b) que podemos gerar alguns relatórios,
+ como ata de prova,
+ ata de presença e diário de classe.
+\end_layout
+
+\begin_layout Itemize
 A Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -5028,7 +5943,7 @@ reference "fig:Sistema Acadêmico - Turmas - Relatório - Ata de Presença"
 
 \begin_deeper
 \begin_layout Itemize
-Use para colegar presença dos alunos.
+Use para coletar a presença dos alunos.
 \end_layout
 
 \end_deeper
@@ -5186,7 +6101,7 @@ reference "fig:Sistema Acadêmico - Turmas - encerrar turma"
 
 \begin_deeper
 \begin_layout Itemize
-Após encerrar uma turma nada pode ser alterado!
+Após encerrar uma turma nada pode ser alterado,
  portanto,
  só encerre após duas ou três verificações.
 \end_layout
@@ -5301,7 +6216,7 @@ status open
 \begin_inset Graphics
 	filename imagens/SistemaAcademico/SistemaAcademico-Turmas-6-PesquisaPorTurmas.png
 	lyxscale 50
-	width 100text%
+	width 70text%
 	height 80theight%
 	keepAspectRatio
 
@@ -5428,482 +6343,6 @@ média/frequência
 \end_layout
 
 \end_deeper
-\end_deeper
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Programação:
-
-\series default
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Uma turma é algo conceitual (uma classe) que representa um conjunto de objetos do tipo turma.
-\end_layout
-
-\begin_layout Itemize
-A turma LEP01111 Introdução à Engenharia de Petróleo é uma realização,
- um objeto.
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-iftoggle{FormatoApresentacaoTRUE}{
-\backslash
-newpage}{} 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Presenças
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec:Presenças"
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-juntar com faltas
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-ESTA PARTE ESTA REPETINDO ALGUMAS IMAGENS
-\end_layout
-
-\end_inset
-
-Nas disciplinas presenciais o aluno deve ter um mínimo de 75% de presença.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Não existe abono de faltas!
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-A coleta de presenças pelo professor é obrigatória.
-\end_layout
-
-\begin_layout Itemize
-O sistema acadêmico permite gerar,
- para cada turma,
- 
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\emph on
-Atas de Presenças 
-\emph default
-(os alunos assinam) ou 
-\end_layout
-
-\begin_layout Itemize
-
-\emph on
-Diários de Classe 
-\emph default
-(o professor faz a chamada).
- 
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Veja na Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Sistema Acadêmico - Gerando Ata de Presença e Diário de Classe"
-
-\end_inset
-
- o professor gerando uma 
-\emph on
-Ata de Presença
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-alignment document
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/SistemaAcademico/SistemaAcademico-Presenca-1-Gerando-AtaDePresenca-DiarioDeClasse.png
-	lyxscale 50
-	width 100text%
-	height 80theight%
-	keepAspectRatio
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sistema Acadêmico - Gerando Ata de Presença e Diário de Classe
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Sistema Acadêmico - Gerando Ata de Presença e Diário de Classe"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-As presenças podem ser coletadas em sala de aula usando uma ata de presenças que é uma folha de assinaturas.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Veja na Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Sistema Acadêmico - Ata de Presença"
-
-\end_inset
-
- exemplo de ATA DE PRESENÇA gerada pelo sistema acadêmico.
-\end_layout
-
-\begin_layout Description
-Nota:
- Podem ocorrer eventos de fraudes como um aluno assinar por outro!
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-alignment document
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/SistemaAcademico/SistemaAcademico-Presenca-2-AtaDePresenca.png
-	lyxscale 50
-	width 100text%
-	height 80theight%
-	keepAspectRatio
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sistema Acadêmico - Ata de Presença
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Sistema Acadêmico - Ata de Presença"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Outra forma de coletar as presenças é usar um 
-\series bold
-Diário de Classe
-\series default
-.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Veja na Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Sistema Acadêmico - Diário de Classe"
-
-\end_inset
-
- exemplo de ATA DE PRESENÇA gerada pelo sistema acadêmico.
-\end_layout
-
-\begin_layout Itemize
-Neste caso o professor faz a chamada.
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-alignment document
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/SistemaAcademico/SistemaAcademico-Presenca-3-DiarioDeClasse.png
-	lyxscale 50
-	width 100text%
-	height 80theight%
-	keepAspectRatio
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sistema Acadêmico - Diário de Classe
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Sistema Acadêmico - Diário de Classe"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-As presenças são lançadas no final de cada mês usando o aplicativo 
-\emph on
-online
-\emph default
- 
-\begin_inset CommandInset href
-LatexCommand href
-target "https://academico.uenf.br/"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Veja na Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Sistema Acadêmico - Prazos para lançamento de presenças"
-
-\end_inset
-
- os prazos.
-\end_layout
-
-\begin_layout Itemize
-Veja na Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Sistema Acadêmico - Exemplo lançamento de presenças"
-
-\end_inset
-
- exemplo de lançamento mensal das presenças.
-\end_layout
-
-\begin_layout Itemize
-Note que é bastante trabalhoso pois o professor tem de conferir,
- para cada aluno,
- o total de faltas (ou presenças).
-\end_layout
-
-\begin_layout Itemize
-É um trabalho manual,
- tedioso,
- repetitivo e 
-\emph on
-sujeito a erros
-\emph default
-.
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-alignment document
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/SistemaAcademico/SistemaAcademico-Presenca-4-Prazos.png
-	lyxscale 50
-	width 100text%
-	height 80theight%
-	keepAspectRatio
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sistema Acadêmico - Prazos para lançamento de presenças
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Sistema Acadêmico - Prazos para lançamento de presenças"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-alignment document
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/SistemaAcademico/SistemaAcademico-Presenca-5-Lancamentos.png
-	lyxscale 50
-	width 100text%
-	height 80theight%
-	keepAspectRatio
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Sistema Acadêmico - Exemplo lançamento de presenças
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Sistema Acadêmico - Exemplo lançamento de presenças"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-iftoggle{FormatoApresentacaoTRUE}{
-\backslash
-newpage}{} 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 Avaliações
 \begin_inset CommandInset label
@@ -5960,6 +6399,276 @@ Data de realização
 \end_layout
 
 \end_deeper
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Subsection
+Presenças
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Presenças"
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+juntar com faltas
+\end_layout
+
+\end_inset
+
+ [- esta repetindo!]
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ESTA PARTE ESTA REPETINDO ALGUMAS IMAGENS
+\end_layout
+
+\end_inset
+
+Nas disciplinas presenciais o aluno deve ter um mínimo de 75% de presença.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Não existe abono de faltas!
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+A coleta de presenças pelo professor é obrigatória.
+\end_layout
+
+\begin_layout Itemize
+O sistema acadêmico permite gerar,
+ para cada turma,
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\emph on
+Atas de Presenças 
+\emph default
+(os alunos assinam) (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema Acadêmico - Turmas - Relatório - Ata de Presença"
+
+\end_inset
+
+) ou 
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Diários de Classe 
+\emph default
+(o professor faz a chamada) (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema Acadêmico - Turmas - Relatório - Diário de Classe"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Veja na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema Acadêmico - Gerando Ata de Presença e Diário de Classe"
+
+\end_inset
+
+ o professor gerando uma 
+\emph on
+Ata de Presença
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/SistemaAcademico/SistemaAcademico-Presenca-1-Gerando-AtaDePresenca-DiarioDeClasse.png
+	lyxscale 50
+	width 100text%
+	height 80theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sistema Acadêmico - Gerando Ata de Presença e Diário de Classe
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sistema Acadêmico - Gerando Ata de Presença e Diário de Classe"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+As presenças podem ser coletadas em sala de aula usando uma ata de presenças que é uma folha de assinaturas.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Veja na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema Acadêmico - Turmas - Relatório - Ata de Presença"
+
+\end_inset
+
+ exemplo de ATA DE PRESENÇA gerada pelo sistema acadêmico.
+\end_layout
+
+\begin_layout Description
+Nota:
+ Podem ocorrer eventos de fraudes como um aluno assinar por outro!
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Outra forma de coletar as presenças é usar um 
+\series bold
+Diário de Classe
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Veja na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema Acadêmico - Turmas - Relatório - Ata de Presença"
+
+\end_inset
+
+ exemplo de ATA DE PRESENÇA gerada pelo sistema acadêmico.
+\end_layout
+
+\begin_layout Itemize
+Neste caso o professor faz a chamada.
+\end_layout
+
+\begin_layout Itemize
+Menor ocorrência de fraudes,
+ mas toma tempo da aula.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+As presenças são lançadas no final de cada mês usando o aplicativo 
+\emph on
+online
+\emph default
+ 
+\begin_inset CommandInset href
+LatexCommand href
+target "https://academico.uenf.br/"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Veja na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema Acadêmico - Turmas - Lançar notas - avaliações"
+
+\end_inset
+
+ os prazos.
+\end_layout
+
+\begin_layout Itemize
+Veja na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema Acadêmico - Turmas - Lançar notas - faltas - exemplo"
+
+\end_inset
+
+ exemplo de lançamento mensal das presenças.
+\end_layout
+
+\begin_layout Itemize
+Note que é bastante trabalhoso pois o professor tem de conferir,
+ para cada aluno,
+ o total de faltas (ou presenças).
+\end_layout
+
+\begin_layout Itemize
+É um trabalho manual,
+ tedioso,
+ repetitivo e 
+\emph on
+sujeito a erros
+\emph default
+.
+\end_layout
+
+\begin_layout Description
+Nota:
+ a UENF deveria implantar um mecanismo automatizado,
+ com coleta de digital na entrada da sala.
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset ERT
 status open
@@ -5979,6 +6688,39 @@ newpage}{}
 \end_layout
 
 \begin_layout Section
+Resumo das turmas
+\end_layout
+
+\begin_layout Itemize
+Uma turma esta associada a uma disciplina ativa,
+ tem professor coordenador,
+ sala e alunos.
+\end_layout
+
+\begin_layout Itemize
+Uma turma pode estar sendo criada,
+ ativa,
+ sendo encerrada.
+\end_layout
+
+\begin_layout Itemize
+Uma turma precisa de uma forma de avaliação que inclua um mínimo de duas provas.
+\end_layout
+
+\begin_layout Itemize
+Uma turma precisa ter suas faltas lançadas a cada 30 dias,
+ normalmente dia 14.
+\end_layout
+
+\begin_layout Itemize
+As atividades,
+ aulas,
+ provas,
+ lançamento de notas e encerramento da turma,
+ devem ser executadas dentro do período definido pelo calendário acadêmico.
+\end_layout
+
+\begin_layout Chapter
 Exigências
 \begin_inset CommandInset label
 LatexCommand label
@@ -5994,27 +6736,27 @@ Iremos esclarecer:
 \end_layout
 
 \begin_layout Itemize
-porque passamos a usar exigências,
- 
+Porque passamos a usar exigências.
 \end_layout
 
 \begin_layout Itemize
-o que é uma exigência,
- 
+O que é uma exigência.
 \end_layout
 
 \begin_layout Itemize
-tipos/Programas e Categorias,
- 
+Tipos/Programas e Categorias.
 \end_layout
 
 \begin_layout Itemize
-como cadastrar uma turma de exigência,
- 
+Como cadastrar uma turma de exigência.
 \end_layout
 
 \begin_layout Itemize
-vantagens e desvantagens do modelo adotado.
+Vantagens e desvantagens do modelo adotado.
+\end_layout
+
+\begin_layout Itemize
+O que precisa ser melhorado.
 \end_layout
 
 \begin_layout Standard
@@ -6035,7 +6777,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Porque passamos a usar exigências?
 \begin_inset CommandInset label
 LatexCommand label
@@ -6180,6 +6922,448 @@ Por exemplo,
 
 \end_deeper
 \end_deeper
+\begin_layout Subparagraph
+\begin_inset CommandInset href
+LatexCommand href
+name "MEC - Resoluções associadas a exigência de extensão"
+target "https://www.gov.br/mec/pt-br/cne/normas-classificadas-por-assunto/extensao-na-educacao-superior-brasileira"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os textos a seguir são cópias dos documentos encontrados no site do MEC e cujos links estão disponibilizados.
+\end_layout
+
+\begin_layout Itemize
+Parecer CNE/CES nº 608/2018,
+ aprovado em 3 de outubro de 2018 - 
+\series bold
+
+\begin_inset CommandInset href
+LatexCommand href
+name "Diretrizes para as Políticas de Extensão da Educação Superior Brasileira"
+target "http://portal.mec.gov.br/index.php?option=com_docman&view=download&alias=102551-pces608-18&category_slug=novembro-2018-pdf&Itemid=30192"
+literal "false"
+
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+Resolução CNE/CES nº 7,
+ de 18 de dezembro de 2018 - 
+\series bold
+
+\begin_inset CommandInset href
+LatexCommand href
+name "Estabelece as Diretrizes para a Extensão na Educação Superior Brasileira"
+target "http://portal.mec.gov.br/index.php?option=com_docman&view=download&alias=104251-rces007-18&category_slug=dezembro-2018-pdf&Itemid=30192"
+literal "false"
+
+\end_inset
+
+ 
+\series default
+e regimenta o disposto na Meta 12.7 da Lei nº 13.005/2014,
+ que aprova o Plano Nacional de Educação - PNE 2014-2024 e dá outras providências.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+12.7) assegurar,
+ no mínimo,
+ 10% (dez por cento) do total de créditos curriculares exigidos para a graduação em programas e projetos de extensão universitária,
+ orientando sua ação,
+ prioritariamente,
+ para áreas de grande pertinência social.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Parecer CNE/CES nº 576/2023,
+ aprovado em 9 de agosto de 2023 - Revisão da Resolução CNE/CES nº 7,
+ de 18 de dezembro de 2018,
+ que estabelece as 
+\series bold
+
+\begin_inset CommandInset href
+LatexCommand href
+name "Diretrizes para a Extensão na Educação Superior Brasileira"
+target "http://portal.mec.gov.br/index.php?option=com_docman&view=download&alias=251351-pces576-23&category_slug=agosto-2023-pdf&Itemid=30192"
+literal "false"
+
+\end_inset
+
+
+\series default
+ e regimenta o disposto na Meta 12.7 da Lei nº 13.005,
+ de 25 de junho de 2014,
+ que aprova o Plano Nacional de Educação – PNE 2014-2024 e dá outras providências (disponível 
+\begin_inset CommandInset href
+LatexCommand href
+name "aqui"
+target "http://portal.mec.gov.br/index.php?option=com_docman&view=download&alias=251351-pces576-23&category_slug=agosto-2023-pdf&Itemid=30192"
+literal "false"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+O referido Parecer,
+ à época,
+ assim descreveu:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+\begin_inset Quotes eld
+\end_inset
+
+Partindo das abordagens teóricas e históricas,
+ pode-se encontrar,
+ nas práticas extensionistas das universidades,
+ três concepções ideológicas que se entrecruzam e adquirem materialidade:
+ a posição assistencialista,
+ que se caracteriza pelo atendimento às demandas sociais por intermédio da prestação de serviços à comunidade;
+ a dimensão transformadora,
+ na qual as relações entre universidade e sociedade são dialógicas e buscam a transformação social,
+ e,
+ mais recentemente,
+ o entendimento de que as demandas,
+ advindas da sociedade,
+ são tomadas como novas expectativas de serviços que a sociedade demanda da universidade.
+ A parceria da universidade com os demais setores da sociedade civil,
+ portanto,
+ poderia ser o mecanismo de articulação entre esses atores ao transformar a instituição de ensino também em produtora de bens e serviços.
+\begin_inset Quotes erd
+\end_inset
+
+ [Parecer CNE/CES nº 608/2018]
+\end_layout
+
+\begin_layout Quotation
+A cada uma dessas concepções corresponde os limites das suas práticas.
+ A atividade eminentemente assistencial às comunidades carentes encontra-se afastada da busca de soluções para os problemas sociais,
+ econômicos e culturais.
+\end_layout
+
+\begin_layout Quotation
+A concepção que se tem de uma universidade,
+ por vezes redentora,
+ pode atribuir à extensão,
+ e,
+ consequentemente,
+ à própria universidade,
+ 
+\emph on
+tarefas que extrapolam a sua capacidade de ação
+\emph default
+.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\emph on
+Nesse aspecto,
+ nada melhor do que projetos e programas de extensão em que os estudantes fazem sua imersão em atividades profissionais práticas.
+\end_layout
+
+\begin_layout Itemize
+Nessa perspectiva,
+ a Comissão entende que é necessária a preservação das orientações descritas no Parecer CNE/CES nº 608/2018 e reforça a necessidade da compreensão de que a aprendizagem de competências exige uma imersão prática que a extensão pode oferecer.
+\end_layout
+
+\begin_layout Itemize
+Assim,
+ apesar das dificuldades e controvérsias que a aprendizagem de competências pode apresentar,
+ segundo vários estudiosos sintetizados em Ropé e Tanguy (1997) ou conforme Ramos (2001),
+ tanto referente à metodologia quanto à concepção,
+ não há como discordar que a aprendizagem,
+ sem experiência prática,
+ não pode ocorrer com a qualidade necessária para a formação profissional.
+ 
+\emph on
+Habilidades se desenvolvem na prática
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+estimular o conhecimento dos problemas do mundo presente,
+ em particular os nacionais e regionais,
+ prestar serviços especializados à comunidade e estabelecer com esta uma relação de reciprocidade.
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Assim,
+ o artigo 9º da Resolução CNE/CES nº 7/2018 terá a seguinte redação:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Art.
+ 9º As atividades especificadas no Art.
+ 8º desta Resolução,
+ considerando o disposto nas normas vigentes,
+ poderão ser desenvolvidas de forma remota,
+ síncrona ou assíncrona,
+ sem serem confundidas com a modalidade EaD,
+ observadas as seguintes condições:
+\end_layout
+
+\begin_layout Itemize
+I – programas e projetos deverão dar importância à prática vivencial,
+ considerada esta como a participação ativa do estudante,
+ podendo ter,
+ no máximo,
+ 20% (vinte por cento) da carga horária total dessas atividades de extensão ofertadas de forma remota síncrona ou assíncrona.
+\end_layout
+
+\begin_layout Itemize
+II – cursos,
+ oficinas e eventos poderão ter até 30% (trinta por cento) da carga horária total dessas atividades de extensão ofertadas de forma remota síncrona ou assíncrona.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+A alteração proposta no artigo 12 da supracitada Resolução traz a justificativa da necessidade de flexibilizar o processo de oferta de atividades de extensão,
+ permitindo que as IES elaborem seus percursos formativos de acordo com as características dos respectivos cursos,
+ das necessidades e características regionais,
+ das cadeias produtivas locais e em vista de possibilidades interventivas em programas específicos necessários ao desenvolvimento do país.
+ Assim,
+ a proposta de alteração do artigo 12 da Resolução CNE/CES nº 7/2018,
+ terá a redação abaixo apresentada:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Art.
+ 12.
+ A avaliação externa in loco institucional e de cursos,
+ de responsabilidade do Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (Inep),
+ autarquia vinculada ao Ministério da Educação (MEC) deve considerar para efeito de 
+\emph on
+autorização,
+ reconhecimento e renovação de reconhecimento de cursos
+\emph default
+,
+ 
+\emph on
+bem como para o credenciamento e recredenciamento das instituições de educação superior,
+ de acordo com o Sistema Nacional de Avaliação (SINAES),
+ os seguintes fatores,
+ 
+\emph default
+entre outros que lhe couber:
+\end_layout
+
+\begin_layout Itemize
+I – as atividades de extensão,
+ tipificadas no Art.
+ 8º desta Resolução,
+ ocuparão um espaço de formação 
+\series bold
+entre 10% (dez por cento) e 12% (doze por cento) 
+\series default
+do total da carga horária curricular dos cursos de graduação,
+ as quais poderão ser organizadas a partir da matriz curricular e serem definidas no Projeto Pedagógico de cada curso;
+\end_layout
+
+\begin_layout Itemize
+II – o impacto e o resultado das atividades de extensão no desenvolvimento regional,
+ na aprendizagem dos estudantes e na articulação da extensão com seu entorno locorregional;
+\end_layout
+
+\begin_layout Itemize
+III – 
+\emph on
+a articulação entre as atividades de extensão e as atividades de ensino e pesquisa 
+\emph default
+realizadas nas instituições de educação superior;
+ e
+\end_layout
+
+\begin_layout Itemize
+IV – os docentes responsáveis pela orientação das atividades de extensão nos cursos de graduação.
+\end_layout
+
+\begin_layout Itemize
+Parágrafo único.
+ Aos estudantes,
+ deverá ser permitida a participação em quaisquer atividades de extensão,
+ mantidas pelas instituições de educação superior,
+ respeitados os eventuais pré-requisitos especificados nas normas pertinentes.
+\end_layout
+
+\begin_layout Itemize
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Altera a Resolução CNE/CES nº 7,
+ de 18 de dezembro de 2018
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Art.
+ 8º As atividades extensionistas,
+ segundo sua caracterização nos projetos políticos pedagógicos dos cursos,
+ se inserem nas seguintes modalidades:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+I – Programas;
+ 
+\series default
+[<=20%]
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+II – Projetos;
+ 
+\series default
+[<=30%]
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+III – Cursos e oficinas;
+ 
+\series default
+[podem ser online]
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+IV – Eventos;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+V – Prestação de serviços.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Art.
+ 9º As atividades especificadas no Art.
+ 8º desta Resolução,
+ considerando o disposto nas normas vigentes,
+ 
+\series bold
+poderão ser desenvolvidas de forma remota,
+ síncrona ou assíncrona
+\series default
+,
+ sem serem confundidas com a modalidade Educação a Distância (EaD),
+ observadas as seguintes condições:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+I – programas e projetos deverão dar importância à prática vivencial
+\series default
+,
+ considerada esta como a participação ativa do estudante,
+ podendo ter,
+ 
+\series bold
+no máximo,
+ 20% (vinte por cento) da carga horária total 
+\series default
+dessas atividades de extensão ofertadas de forma remota síncrona ou assíncrona;
+ e
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+II – cursos,
+ oficinas e eventos poderão ter até 30% (trinta por cento) da carga horária total 
+\series default
+dessas atividades de extensão ofertadas de forma remota síncrona ou assíncrona.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+CAPÍTULO III DO REGISTRO
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Art.
+ 15.
+ As atividades de extensão devem ter sua proposta,
+ desenvolvimento e conclusão,
+ devidamente registrados,
+ documentados e analisados,
+ de forma que seja possível organizar os planos de trabalho,
+ as metodologias,
+ os instrumentos e os conhecimentos gerados.
+\end_layout
+
+\begin_layout Itemize
+Parágrafo único.
+ As atividades de extensão devem ser sistematizadas e acompanhadas,com o adequado assentamento,
+ além de registradas,
+ fomentadas e avaliadas por instâncias administrativas institucionais,
+ devidamente estabelecidas,
+ em regimento próprio.
+\end_layout
+
+\begin_layout Itemize
+Art.
+ 16.
+ As atividades de extensão devem ser também adequadamente registradas na documentação dos estudantes como forma de seu reconhecimento formativo.
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Standard
 \begin_inset ERT
 status open
@@ -6198,7 +7382,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 O que é uma exigência?
 \begin_inset CommandInset label
 LatexCommand label
@@ -6232,7 +7416,7 @@ Na prática o sistema acadêmico foi alterado e foram incluídas as atividades d
  
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Exigências - Programas
 \begin_inset CommandInset label
 LatexCommand label
@@ -7036,7 +8220,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Exigências - Categorias
 \begin_inset CommandInset label
 LatexCommand label
@@ -8686,7 +9870,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Exigências do curso de Engenharia de Petróleo
 \begin_inset CommandInset label
 LatexCommand label
@@ -9718,7 +10902,7 @@ name "subsec:UENF003 - Estágio Curricular Obrigatório "
 
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Itemize
@@ -9774,7 +10958,7 @@ newpage}{}
 \end_layout
 
 \begin_layout Subsection
-UENF013 - Atividades Curriculares de Extensão 
+UENF013 - Atividades Curriculares de Extensão
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:UENF013 - Atividades Curriculares de Extensão "
@@ -10866,8 +12050,8 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Section
-Turmas de Exigências
+\begin_layout Chapter
+Turmas de exigências
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Turmas-de-Exigências"
@@ -10877,7 +12061,7 @@ name "sec:Turmas-de-Exigências"
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 O que é uma turma de exigência
 \begin_inset CommandInset label
 LatexCommand label
@@ -10889,15 +12073,176 @@ name "subsec: O que é uma turma de exigência"
 \end_layout
 
 \begin_layout Itemize
-Veja na Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Sistema Acadêmico - Exigências - Processos de exigências-1"
+É uma turma que implementa o atendimento de uma determinada exigência da grade curricular.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+iftoggle{FormatoApresentacaoTRUE}{
+\backslash
+newpage}{} 
+\end_layout
 
 \end_inset
 
- a lista com matrícula,
- nome e número do processo SEI do aluno.
+
+\end_layout
+
+\begin_layout Section
+Propriedades de uma turma de exigência
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec: Propriedades de uma turma de exigência"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Ano/semestre
+\end_layout
+
+\begin_layout Itemize
+Programa
+\end_layout
+
+\begin_layout Itemize
+Categoria
+\end_layout
+
+\begin_layout Itemize
+Coordenador da exigência
+\end_layout
+
+\begin_layout Itemize
+Direcionamento [cursos]
+\end_layout
+
+\begin_layout Itemize
+Curso responsável
+\end_layout
+
+\begin_layout Itemize
+Vagas 
+\end_layout
+
+\begin_layout Itemize
+Código
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+iftoggle{FormatoApresentacaoTRUE}{
+\backslash
+newpage}{} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Estados associados a uma turma de exigência
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Estados associados a uma turma de exigência"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+turma criada.
+\end_layout
+
+\begin_layout Itemize
+alunos sendo matriculados.
+\end_layout
+
+\begin_layout Itemize
+aguardando notas.
+\end_layout
+
+\begin_layout Itemize
+notas lançadas.
+\end_layout
+
+\begin_layout Itemize
+turma encerrada.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+diagrama de caso de uso?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+iftoggle{FormatoApresentacaoTRUE}{
+\backslash
+newpage}{} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Cenários para uma turma de exigência
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Cenários para uma turma de exigência"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema Acadêmico - Turmas de exigência - Diagrama de Caso de Uso"
+
+\end_inset
+
+ mostra um diagrama de caso de uso em que o professor coordenador da turma realiza uma série de atividades.
+\end_layout
+
+\begin_layout Itemize
+Note que existe uma relação com os requisitos a serem atendidos e os cenários de uso do sistema acadêmico pelos professores.
+ 
+\end_layout
+
+\begin_layout Itemize
+Também costuma haver uma relação com as funcionalidades a serem implementadas e disponibilizadas.
 \end_layout
 
 \begin_layout Standard
@@ -10911,9 +12256,10 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/SistemaAcademico/SistemaAcademico-Exigencias-5-Processos.png
+	filename imagens/ModelosSistemaAcademicoHipotetico-ProjetoDisciplina/diagramaDeCasoDeUso-ProfessorTurmasExigencias.png
+	lyxscale 50
 	width 100text%
-	height 70theight%
+	height 80theight%
 	keepAspectRatio
 
 \end_inset
@@ -10925,42 +12271,20 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Sistema Acadêmico - Exigências - Processos de exigências
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-iftoggle{FormatoApresentacaoTRUE}{
-\backslash
-newpage}{} 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Propriedades de uma turma de exigência
+Sistema Acadêmico - Turmas de exigência - Diagrama de Caso de Uso
 \begin_inset CommandInset label
 LatexCommand label
-name "subsec: Propriedades de uma turma de exigência"
+name "fig:Sistema Acadêmico - Turmas de exigência - Diagrama de Caso de Uso"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -10985,81 +12309,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsection
-Estados associados a uma turma de exigência
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec:Estados associados a uma turma de exigência"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-turma criada
-\end_layout
-
-\begin_layout Itemize
-alunos matriculados
-\end_layout
-
-\begin_layout Itemize
-notas lançadas
-\end_layout
-
-\begin_layout Itemize
-encerrada
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-iftoggle{FormatoApresentacaoTRUE}{
-\backslash
-newpage}{} 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Cenários para uma turma de exigência
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec:Cenários para uma turma de exigência"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-iftoggle{FormatoApresentacaoTRUE}{
-\backslash
-newpage}{} 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
+\begin_layout Section
 Menus para uma turma de exigência
 \begin_inset CommandInset label
 LatexCommand label
@@ -11071,7 +12321,7 @@ name "subsec:Menus para uma turma de exigência"
 \end_layout
 
 \begin_layout Itemize
-Veja na Figura  
+Veja na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Sistema Acadêmico - Menu Exigências"
@@ -11093,7 +12343,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/SistemaAcademico/SistemaAcademico-Exigencias-0-Menu.png
-	width 80text%
+	width 70text%
 	height 70theight%
 	keepAspectRatio
 
@@ -11144,7 +12394,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Funcionalidade:
  processos de exigência
 \begin_inset CommandInset label
@@ -11157,7 +12407,14 @@ name "subsec:Funcionalidade:-processos-de-exigencia"
 \end_layout
 
 \begin_layout Itemize
-A Figura x mostra os processos de exigência para os alunos do curso de engenharia de petróleo.
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema Acadêmico - Exigências - Processos de exigências-1"
+
+\end_inset
+
+ mostra os processos de exigência para os alunos do curso de engenharia de petróleo.
 \end_layout
 
 \begin_deeper
@@ -11170,7 +12427,8 @@ Neste processo serão incluídos todos os documentos associados ao cumprimento d
 \end_layout
 
 \begin_layout Itemize
-Note que o processo pode ser criado perto da formatura do aluno.
+Note que o processo pode ser criado perto da formatura do aluno,
+ idealmente no 9 período.
 \end_layout
 
 \end_deeper
@@ -11178,7 +12436,7 @@ Note que o processo pode ser criado perto da formatura do aluno.
 Veja na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Sistema Acadêmico - Exigências - Processos de exigências"
+reference "fig:Sistema Acadêmico - Exigências - Processos de exigências-1"
 
 \end_inset
 
@@ -11214,7 +12472,7 @@ status open
 Sistema Acadêmico - Exigências - Processos de exigências
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Sistema Acadêmico - Exigências - Processos de exigências"
+name "fig:Sistema Acadêmico - Exigências - Processos de exigências-1"
 
 \end_inset
 
@@ -11249,7 +12507,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Funcionalidade:
  criar turma de exigência
 \begin_inset CommandInset label
@@ -11262,7 +12520,7 @@ name "subsec:Funcionalidade: criar turma de exigência"
 \end_layout
 
 \begin_layout Itemize
-Veja na Figura  
+Veja na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Sistema Acadêmico - Exigências - Criar turma"
@@ -11270,11 +12528,28 @@ reference "fig:Sistema Acadêmico - Exigências - Criar turma"
 \end_inset
 
  os itens a serem preenchidos para criar uma turma de exigência.
+ Observe que são as propriedades apresentadas na seção 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec: Propriedades de uma turma de exigência"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Precisamos informar o Programa (seção 
+Ano/semestre,
+ Coordenador,
+ direcionamento,
+ curso,
+ vagas,
+ código (se houver mais de uma turma com mesmo programa/categoria).
+\end_layout
+
+\begin_layout Itemize
+A diferença em relação as turmas tradicionais é que aqui precisamos informar o Programa (seção 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Exigências - Programas"
@@ -11285,11 +12560,8 @@ nolink "false"
 
 \end_inset
 
-).
-\end_layout
-
-\begin_layout Itemize
-Precisamos informar a Categoria (seção 
+),
+ e a Categoria (seção 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Exigências - Categorias"
@@ -11301,16 +12573,16 @@ nolink "false"
 \end_inset
 
 ).
+ 
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
-Coordenador,
- direcionamento,
- curso,
- vagas,
- código (se houver mais de uma turma com mesmo programa/categoria).
+Turmas de exigências não estão associadas a disciplinas,
+ mas a programas e categorias.
 \end_layout
 
+\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Float figure
@@ -11375,7 +12647,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Funcionalidade:
  alterar dados da turma de exigência
 \begin_inset CommandInset label
@@ -11388,7 +12660,7 @@ name "subsec:Funcionalidade: alterar dados da turma de exigência"
 \end_layout
 
 \begin_layout Itemize
-Veja na Figura  
+Veja na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Sistema Acadêmico - Exigências - Alterar dados da turma de exigência"
@@ -11468,7 +12740,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Funcionalidade:
  ver dados da turma de exigência
 \begin_inset CommandInset label
@@ -11481,7 +12753,7 @@ name "subsec:Funcionalidade: ver dados da turma de exigência"
 \end_layout
 
 \begin_layout Itemize
-Veja na Figura  
+Veja na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Sistema Acadêmico - Exigências - Ver dados da turma de exigência"
@@ -11560,7 +12832,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Funcionalidade:
  inscrever alunos
 \begin_inset CommandInset label
@@ -11585,7 +12857,7 @@ reference "fig:Sistema Acadêmico - Exigências - Inscrever alunos em turma de e
 
 \begin_deeper
 \begin_layout Itemize
-O aluno já teve ter um processo SEI associado (seção 
+Só aparecem os nomes dos alunos cujo processo SEI associado já foi definido (seção 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Funcionalidade:-processos-de-exigencia"
@@ -11668,7 +12940,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Funcionalidade:
  lançar notas (horas)
 \begin_inset CommandInset label
@@ -11689,6 +12961,10 @@ reference "fig:Sistema Acadêmico - Exigências - Lançar notas"
 \end_inset
 
  uma turma com documento SEI e carga horária da aluna lançada.
+\end_layout
+
+\begin_layout Itemize
+O curso de engenharia de petróleo foi o primeiro a migrar para grade nova com exigências e a aluna Giovanna a primeira formanda neste novo formato.
 \end_layout
 
 \begin_layout Standard
@@ -11754,7 +13030,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Funcionalidade:
  pesquisar turmas de exigência
 \begin_inset CommandInset label
@@ -11770,13 +13046,20 @@ name "subsec: Funcionalidade: pesquisar turmas de exigência"
 Veja na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Sistema Acadêmico - Menu Exigências-6"
+reference "fig:Sistema Acadêmico - Exigências - Pesquisa por turmas de exigência"
 
 \end_inset
 
- o menu Exigências.
+ a pesquisa por turmas de exigência.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Podemos informar o nome do coordenador,
+ período letivo se esta validada [esclarecer a razão do item validada?].
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset Float figure
 placement H
@@ -11802,10 +13085,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Sistema Acadêmico - Menu Exigências
+Sistema Acadêmico - Exigências - Pesquisa por turmas de exigência
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Sistema Acadêmico - Menu Exigências-6"
+name "fig:Sistema Acadêmico - Exigências - Pesquisa por turmas de exigência"
 
 \end_inset
 
@@ -11840,7 +13123,1262 @@ newpage}{}
 
 \end_layout
 
+\begin_layout Chapter
+Processos de exigência - Processos SEI
+\end_layout
+
 \begin_layout Section
+O que é um processo de exigência?
+\end_layout
+
+\begin_layout Itemize
+Cada aluno deve completar o conjunto de exigências definidas no seu PPC/Grade.
+\end_layout
+
+\begin_layout Itemize
+Para registro formal de tais exigências,
+ a UENF/PROGRAD adotou um procedimento em que os comprovantes/certificados das exigências do aluno são TODOS armazenados num SEI específico do aluno.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Ou seja,
+ cada aluno terá um SEI específico.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Exemplo de processo SEI para exigência
+\end_layout
+
+\begin_layout Itemize
+Veja na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema Acadêmico - Exigências - Exemplo de Processo SEI"
+
+\end_inset
+
+ um exemplo de processo de exigência.
+ Note que:
+\end_layout
+
+\begin_layout Itemize
+Temos uma correspondência interna que explica do que se trata.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Inclui link para planilha com contabilização dos pontos.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Um conjunto de arquivos zipados anexados ao processo,
+ um arquivo zip para comprovantes de:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+TCC
+\end_layout
+
+\begin_layout Itemize
+Extensão
+\end_layout
+
+\begin_layout Itemize
+Estágio
+\end_layout
+
+\begin_layout Itemize
+AAC
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/Exigencias/SEI-ExemploDeProcessoDeAluno-Exigencias.png
+	width 100text%
+	height 70theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sistema Acadêmico - Exigências - Exemplo de Processo SEI
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sistema Acadêmico - Exigências - Exemplo de Processo SEI"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Exemplo de mecanismo para registro e contabilização das exigências nas secretarias de curso
+\end_layout
+
+\begin_layout Itemize
+Enquanto a UENF não implementa um mecanismo automatizado de registro das exigências no próprio sistema acadêmico temos de adotar alguma solução improvisada e provisória.
+\end_layout
+
+\begin_layout Itemize
+No nosso caso adotamos o seguinte procedimento.
+\end_layout
+
+\begin_layout Subsection
+Pasta do aluno
+\end_layout
+
+\begin_layout Itemize
+Criamos uma pasta alunos,
+ dentro dela criamos pastas para cada aluno (nome-matricula),
+ veja Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Google Drive da Secretaria do Curso: pasta alunos"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/Exigencias/Exigencias-1-PastaDosAlunosNoGoogleDrive.png
+	width 100text%
+	height 70theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Google Drive da Secretaria do Curso:
+ pasta alunos
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Google Drive da Secretaria do Curso: pasta alunos"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Dentro da pasta alunos,
+ criamos pastas para cada aluno (nome-matricula),
+ veja Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Google Drive da Secretaria do Curso: pasta de aluna específica"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/Exigencias/Exigencias-1-PastaDaAlunaNoGoogleDrive.png
+	width 100text%
+	height 70theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Google Drive da Secretaria do Curso:
+ pasta de aluna específica
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Google Drive da Secretaria do Curso: pasta de aluna específica"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Comprovantes/certificados por exigência
+\end_layout
+
+\begin_layout Itemize
+Temos uma pasta para cada tipo de exigência,
+ veja na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Google Drive da Secretaria do Curso: exigência AAC"
+
+\end_inset
+
+ a exigência AAC.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/Exigencias/Exigencias-2-SubDiretorio-Exigencia-AAC.png
+	width 100text%
+	height 70theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Google Drive da Secretaria do Curso:
+ exigência AAC
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Google Drive da Secretaria do Curso: exigência AAC"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Temos uma pasta para cada tipo de exigência,
+ veja na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Google Drive da Secretaria do Curso: exigência AAC"
+
+\end_inset
+
+ a exigência Extensão.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/Exigencias/Exigencias-2-SubDiretorio-Exigencia-Extensao.png
+	width 100text%
+	height 70theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Google Drive da Secretaria do Curso:
+ exigência extensão
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Google Drive da Secretaria do Curso: exigência extensão"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Temos uma pasta para cada tipo de exigência,
+ veja na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Google Drive da Secretaria do Curso: exigência AAC"
+
+\end_inset
+
+ a exigência Estágio.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/Exigencias/Exigencias-1-PastaDaAlunaNoGoogleDrive.png
+	width 100text%
+	height 70theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Google Drive da Secretaria do Curso:
+ pasta de aluna específica
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Google Drive da Secretaria do Curso: pasta de aluna específica-3"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Contabilização das horas de exigências
+\end_layout
+
+\begin_layout Itemize
+Veja na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Google Drive da Secretaria do Curso: exigência AAC"
+
+\end_inset
+
+ a planilha de contabilização de pontos das exigências (aba ajuda).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/Exigencias/Exigencias-3-PlanilhaPontos-Ajuda.png
+	width 100text%
+	height 70theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Google Drive da Secretaria do Curso:
+ planilha de contabilização das exigências - aba ajuda
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Google Drive da Secretaria do Curso: planilha de contabilização das exigências - aba ajuda"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Veja na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Google Drive da Secretaria do Curso: exigência AAC"
+
+\end_inset
+
+ a planilha de contabilização de pontos das exigências (aba ACE).
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Note que temos o número da atividade.
+\end_layout
+
+\begin_layout Itemize
+Data de início e fim.
+\end_layout
+
+\begin_layout Itemize
+Semestre associado.
+\end_layout
+
+\begin_layout Itemize
+Tipo.
+\end_layout
+
+\begin_layout Itemize
+Descrição resumida.
+\end_layout
+
+\begin_layout Itemize
+Horas executadas.
+\end_layout
+
+\begin_layout Itemize
+Link para o comprovante (o comprovante é armazenado na pasta).
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/Exigencias/Exigencias-3-PlanilhaPontos-Aba-ACE.png
+	width 100text%
+	height 70theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Google Drive da Secretaria do Curso:
+ exigência extensão
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Google Drive da Secretaria do Curso: exigência extensão-1-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+A aluna entrega todos os documentos originais (na ordem em que aparecem na planilha).
+\end_layout
+
+\begin_layout Itemize
+Os comprovantes são conferidos e é colocado um 
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+check
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+ na planilha para todos os comprovantes apresentados,
+ de forma que cada item é conferido.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+É importante que esta conferência seja realizada no 9 período,
+ evitar deixar para o 10 período (fim do curso),
+ pois o aluno pode estar devendo alguma exigência e não se formar.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Nota:
+ A aluna já havia concluído estágio e TCC na modalidade antiga de disciplina.
+\end_layout
+
+\begin_layout Section
+O que precisa ser melhorado no sistema de exigências [sugestões]
+\end_layout
+
+\begin_layout Itemize
+Todo o cadastro das exigências deve ser realizado via sistema acadêmico.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Mesmo os de eventos que o aluno tenha realizado fora da UENF.
+\end_layout
+
+\begin_layout Itemize
+Neste caso o próprio aluno registra as informações do evento e anexa os comprovantes.
+\end_layout
+
+\begin_layout Itemize
+Em todo registro anexar os comprovantes/certificados.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Todo certificado de eventos de extensão interno deve ser emitido pela PROEX.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Todo evento realizado com certificado interno deve ser automaticamente contabilizado no histórico/extrato escolar do aluno.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+A UENF precisa estabelecer um mecanismo de certificação dos certificados externos
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Por exemplo,
+ assistiu um seminário na UFRJ e recebeu um certificado,
+ como atestar que tal certificado é verdadeiro?
+\end_layout
+
+\begin_layout Itemize
+O ideal é que as universidades montem um mecanismo de registro de eventos em que o nome completo e cpf do aluno possa ser registrado e compartilhado com outras instituições.
+ Isto simplifica/automatiza/agiliza os processos e evita fraudes.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Quando o aluno se forma o sistema acadêmico deve gerar arquivos .zip com os comprovantes/certificados do aluno,
+ de forma que o registro no SEI seja feito após a formatura.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Desta forma simplifica-se todos os registros e evita-se a necessidade de cadastro contínuo dos dados no SEI.
+\end_layout
+
+\begin_layout Itemize
+Não existe sobrecarga de dados pois dificilmente os comprovantes de um aluno irão superar 1GB,
+ sendo que um servidor com alguns tera-bytes atende toda UENF.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Com servidor de backup.
+\end_layout
+
+\begin_layout Itemize
+Com backups em fita e na internet (google drive).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Após conclusão os dados são armazenados em backups (fitas) e copiados para o SEI.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+O processo SEI deve ser criado pela SECACAD após conclusão do curso.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+iftoggle{FormatoApresentacaoTRUE}{
+\backslash
+newpage}{} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Visualizações do Sistema Acadêmico
+\end_layout
+
+\begin_layout Section
+Introdução ao conceito de componentes e interface
+\end_layout
+
+\begin_layout Itemize
+.
+\end_layout
+
+\begin_layout Subsection
+Componentes de software
+\end_layout
+
+\begin_layout Itemize
+Imagem hipotética dos componentes do sistema acadêmico (exemplo de sala de aula).
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/ModelosSistemaAcademicoHipotetico-ProjetoDisciplina/SA-N1.Aluno.DiagramaComponentesCortado.png
+	width 100text%
+	height 70theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/ModelosSistemaAcademicoHipotetico-ProjetoDisciplina/SA-N0-AssuntosGerais-DiagramaComponentes.png
+	lyxscale 50
+	width 100text%
+	height 70theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Interface de software - módulos/visualizações no sistema acadêmico da UENF
+\end_layout
+
+\begin_layout Itemize
+As Figuras que foram apresentadas neste manual foram geradas no modo 
+\begin_inset Quotes eld
+\end_inset
+
+coordenador
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema Acadêmico - Alternando entre o módulo/visualização Coordenador x Professor"
+
+\end_inset
+
+ mostra o menu que permite alternar entre o módulo/visualização coordenador e professor.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/SistemaAcademico/SistemaAcademico-AlternantoEntreCoordenadorEProfessor.png
+	lyxscale 50
+	width 100text%
+	height 80theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sistema Acadêmico - Alternando entre o módulo/visualização Coordenador x Professor
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sistema Acadêmico - Alternando entre o módulo/visualização Coordenador x Professor"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+A visão do coordenador do curso
+\end_layout
+
+\begin_layout Itemize
+O coordenador vê muito mais coisa que o professor.
+\end_layout
+
+\begin_layout Itemize
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema Acadêmico - Módulo/Visão coordenador - Menu Cadastro"
+
+\end_inset
+
+ mostra o Módulo/Visão Coordenador menu - cadastro.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/SistemaAcademico/SistemaAcademico-Modulo-Visao-Coordenador-Menu-1-Cadastro.png
+	lyxscale 50
+	width 70text%
+	height 80theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sistema Acadêmico - Módulo/Visão Coordenador - Menu Cadastro
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sistema Acadêmico - Módulo/Visão coordenador - Menu Cadastro"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema Acadêmico - Módulo/Visão coordenador - Menu Enade"
+
+\end_inset
+
+ mostra o Módulo/Visão Coordenador menu - Enade.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/SistemaAcademico/SistemaAcademico-Modulo-Visao-Coordenador-Menu-2-Enade.png
+	lyxscale 50
+	width 50text%
+	height 80theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sistema Acadêmico - Módulo/Visão Coordenador - Menu Enade
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sistema Acadêmico - Módulo/Visão coordenador - Menu Enade"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema Acadêmico - Módulo/Visão coordenador - Menu Gestão"
+
+\end_inset
+
+ mostra o Módulo/Visão Coordenador menu - gestão.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/SistemaAcademico/SistemaAcademico-Modulo-Visao-Coordenador-Menu-3-Gestao.png
+	lyxscale 50
+	width 50text%
+	height 80theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sistema Acadêmico - Módulo/Visão Coordenador - Menu Gestã
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sistema Acadêmico - Módulo/Visão coordenador - Menu Gestão"
+
+\end_inset
+
+o
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema Acadêmico - Módulo/Visão coordenador - Menu consulta"
+
+\end_inset
+
+ mostra o Módulo/Visão Coordenador menu - consulta.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/SistemaAcademico/SistemaAcademico-Modulo-Visao-Coordenador-Menu-4-Consulta.png
+	lyxscale 50
+	width 100text%
+	height 80theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sistema Acadêmico - Módulo/Visão Coordenador - Menu consulta
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sistema Acadêmico - Módulo/Visão coordenador - Menu consulta"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema Acadêmico - Módulo/Visão coordenador - Menu Relatórios"
+
+\end_inset
+
+ mostra o Módulo/Visão Coordenador menu - relatórios.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/SistemaAcademico/SistemaAcademico-Modulo-Visao-Coordenador-Menu-5-Relatorios.png
+	lyxscale 50
+	width 50text%
+	height 80theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sistema Acadêmico - Módulo/Visão Coordenador - Menu Relatórios
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sistema Acadêmico - Módulo/Visão coordenador - Menu Relatórios"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+A visão do professor coordenador da turma
+\end_layout
+
+\begin_layout Itemize
+A visão do professor é bastante limitada.
+\end_layout
+
+\begin_layout Itemize
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema Acadêmico - Módulo/Visão Professor - todos os menus"
+
+\end_inset
+
+ mostra o módulo/visão do professor.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Observe que o professor acessa um número muito reduzido de informações.
+\end_layout
+
+\begin_layout Itemize
+Basicamente suas turmas.
+\end_layout
+
+\begin_layout Itemize
+A informação da matriz do aluno.
+\end_layout
+
+\begin_layout Itemize
+E o relatório com a declaração de docência.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/SistemaAcademico/SistemaAcademico-Modulo-Visao-Profesor-Menu-1.png
+	lyxscale 50
+	width 22text%
+	height 80theight%
+	keepAspectRatio
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename imagens/SistemaAcademico/SistemaAcademico-Modulo-Visao-Profesor-Menu-2.png
+	lyxscale 50
+	width 22text%
+	height 80theight%
+	keepAspectRatio
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename imagens/SistemaAcademico/SistemaAcademico-Modulo-Visao-Profesor-Menu-3.png
+	lyxscale 50
+	width 22text%
+	height 80theight%
+	keepAspectRatio
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename imagens/SistemaAcademico/SistemaAcademico-Modulo-Visao-Profesor-Menu-4.png
+	lyxscale 50
+	width 22text%
+	height 80theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sistema Acadêmico - Módulo/Visão Professor - todos os menus
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sistema Acadêmico - Módulo/Visão Professor - todos os menus"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+A visão do aluno
+\end_layout
+
+\begin_layout Itemize
+A visão do aluno é bastante limitada.
+\end_layout
+
+\begin_layout Chapter
 O aplicativo 
 \emph on
 Check-In Serpro
@@ -11873,7 +14411,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Objetivo do 
 \emph on
 Check-In
@@ -11964,7 +14502,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 O que é o 
 \emph on
 Check-In 
@@ -11997,7 +14535,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Como instalar o 
 \emph on
 Check-In 
@@ -12030,7 +14568,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Menu
 \end_layout
 
@@ -12047,7 +14585,7 @@ Menu
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Como configurar um evento
 \begin_inset CommandInset label
 LatexCommand label
@@ -12102,7 +14640,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Como registrar presenças
 \begin_inset CommandInset label
 LatexCommand label
@@ -12214,7 +14752,7 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Como obter a lista de presença
 \begin_inset CommandInset label
 LatexCommand label
@@ -12278,37 +14816,6 @@ name "subsec:Como obter a lista de presença"
 \end_layout
 
 \begin_layout Standard
-\align center
-
-\change_inserted 643308733 1744157651
-\begin_inset Graphics
-	filename imagens/ModelosSistemaAcademicoHipotetico-ProjetoDisciplina/SA-N1.Aluno.DiagramaComponentesCortado.png
-	width 100text%
-	height 70theight%
-	keepAspectRatio
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\change_inserted 643308733 1744157781
-\begin_inset Graphics
-	filename imagens/ModelosSistemaAcademicoHipotetico-ProjetoDisciplina/SA-N0-AssuntosGerais-DiagramaComponentes.png
-	lyxscale 50
-	width 100text%
-	height 70theight%
-	keepAspectRatio
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -12326,17 +14833,68 @@ newpage}{}
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Chapter
 Conclusões
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Conclusões"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-Apresentamos informações básicos do PPC e Grade,
- um manual contextualizado do sistema acadêmico e um software para registro de presença.
+Contextualizamos os problemas associados a implantação das novas exigências do MEC.
 \end_layout
 
 \begin_layout Itemize
-Maiores detalhes sobre diagramas da UML,
+Apresentamos informações básicos do novo PPC e Grade apresentando como exemplo a grade do curso de engenharia de petróleo.
+ 
+\end_layout
+
+\begin_layout Itemize
+Apresentamos um manual contextualizado do sistema do sistema acadêmico mostrando na prática seu uso.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Conceitos e prática de como manipular disciplinas.
+\end_layout
+
+\begin_layout Itemize
+Conceitos e prática de como manipular turmas.
+\end_layout
+
+\begin_layout Itemize
+Conceitos e prática de como manipular exigências e turmas de exigências.
+\end_layout
+
+\begin_layout Itemize
+Processo SEI associados a exigência do aluno.
+\end_layout
+
+\begin_layout Itemize
+Diferentes módulos/visões do sistema acadêmico
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Apresentamos informações sobre mecanismos de registro de presenças e um exemplo de aplicativo do governo federal que pode ser utilizado para coleta de presenças tanto em sala de aula como em eventos externos.
+\end_layout
+
+\begin_layout Itemize
+Para referenciar as informações apresentadas incluímos links para documentos do MEC e UENF.
+\end_layout
+
+\begin_layout Itemize
+Incluímos alguns diagramas usado na modelagem de sistemas de engenharia usando UML.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Maiores detalhes sobre os diagramas da UML - Linguagem de Modelagem Unificada,
  veja 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -12348,6 +14906,7 @@ literal "false"
 .
 \end_layout
 
+\end_deeper
 \begin_layout Standard
 \noindent
 \begin_inset CommandInset bibtex
